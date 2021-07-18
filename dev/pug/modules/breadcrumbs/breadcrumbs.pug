@@ -1,0 +1,11 @@
+mixin breadcrumbs-item(text,href)
+	li.breadcrumbs__item
+		if(href)
+			a.breadcrumbs__link(href=href) #{text}
+		else
+			span.breadcrumbs__text #{text}
+
+if pageClass==='about-page'
+	ul.breadcrumbs.mt-30
+		+breadcrumbs-item('Главная','index.html')
+		+breadcrumbs-item('О компании')

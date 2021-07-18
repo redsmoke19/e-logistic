@@ -1,0 +1,13 @@
+mixin sidebar(icon,width,height,link,text)
+	li.sidebar__item
+		a.sidebar__link(href=link)
+			span.sidebar__text #{text}
+			+icon(icon,'sidebar__icon',width,height)
+
+.header__sidebar.sidebar
+	ul.sidebar__list
+		+sidebar('icon-sidebar-calc', '40', '40', '#', 'Расчитать стоимость доставки')
+		+sidebar('icon-sidebar-pay', '40', '40', '#', 'Оплатить доставку онлайн')
+		+sidebar('icon-sidebar-delivery', '40', '40', '#', 'Вызвать курьера')
+		+sidebar('icon-sidebar-track', '40', '40', '#', ' Отследить заказ')
+		+sidebar('icon-sidebar-client', '40', '40', '#', ' Стать клиентом')

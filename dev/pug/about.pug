@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'О компании'
+	-var pageClass = 'about-page'
+
+block content
+	main(class=pageClass)
+		include pages/about/hero/hero
+		include pages/about/statistics/statistics

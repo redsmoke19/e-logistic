@@ -1,0 +1,13 @@
+.user-controls {
+  align-items: center;
+  display: flex;
+  &__link {
+    transition: all ease-out .15s;
+    &:hover {
+      opacity: .7;
+    }
+    &:not(:last-child) {
+      margin: 0 40px 0 0;
+    }
+  }
+}

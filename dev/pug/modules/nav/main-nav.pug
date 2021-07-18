@@ -1,0 +1,31 @@
+mixin subNavItem(text,link)
+	li.nav__sub-item
+		a.nav__sub-link(href=link) #{text}
+
+mixin navItem(text,link,sub)
+	li.nav__item
+		if sub
+			a.nav__link.nav__link--sub(href=link) #{text}
+			ul.nav__sub-list
+				block
+		else
+			a.nav__link(href=link) #{text}
+
+nav.nav
+	ul.nav__list
+		+navItem('О компании', '#', true)
+			+subNavItem('Новости', '#')
+			+subNavItem('Отзывы', '#')
+			+subNavItem('Способы оплаты', '#')
+			+subNavItem('Преимущества', '#')
+			+subNavItem('Сертификаты', '#')
+		+navItem('Интернет магазин', '#', true)
+			+subNavItem('Доставка по Спб', '#')
+			+subNavItem('Доставка по Москве', '#')
+			+subNavItem('Доставка Сбп - Москва', '#')
+		+navItem('Экспресс-доставка', '#', false)
+		+navItem('Полезная информация', '#', true)
+			+subNavItem('Документы', '#')
+			+subNavItem('Личный кабинет и IT интеграция', '#')
+			+subNavItem('Часто задаваемые вопросы', '#')
+		+navItem('Контакты', '#', false)

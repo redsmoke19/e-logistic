@@ -1,0 +1,40 @@
+.nav {
+  &__list {
+    align-items: center;
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+    }
+  }
+  &__link {
+    color: $white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    transition: all ease-out .15s;
+    &--sub {
+      padding: 5px 22px 5px 5px;
+      &::before {
+        background: url('../images/common/icon-arrow-bottom.svg') no-repeat center;
+        content: '';
+        height: 8px;
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(calc(-50% + 1px));
+        width: 10px;
+      }
+    }
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__sub-list {
+    display: none;
+  }
+}
