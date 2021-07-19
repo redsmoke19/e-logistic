@@ -1,1 +1,54 @@
 footer { flex: 0 0 auto; }
+.footer {
+  padding: 130px 0 135px;
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+  &__socials {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+  &__social {
+    color: $black;
+    font-size: 15px;
+    line-height: 21px;
+    padding: 0 10px;
+    text-decoration: underline;
+  }
+  &__icon-social {
+    margin: 0 12px 0 0;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 31px;
+  }
+  &__name {
+    color: $text-grey-color;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  &__link {
+    align-items: center;
+    color: $black;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    position: relative;
+    text-decoration: none;
+    transition: all ease-out .2s;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__icon-phone {
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

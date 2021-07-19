@@ -43,6 +43,9 @@
     flex-direction: column;
     padding-left: 31px;
   }
+  &__city {
+    color: $text-grey-color;
+  }
   &__tel {
     color: $black;
     display: flex;
