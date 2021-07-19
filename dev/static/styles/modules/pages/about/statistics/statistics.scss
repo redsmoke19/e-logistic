@@ -1,0 +1,44 @@
+.about-statistics {
+  background-color: $dark-green-color;
+  padding: 100px 0 200px;
+  position: relative;
+  &__top {
+    margin: 0 0 120px 0;
+  }
+  &__text {
+    color: $white;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__title {
+    color: $white;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 50px 0;
+  }
+  &__count {
+    color: $red-color;
+    display: block;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 100px;
+    margin: 0 0 32px 0;
+  }
+  &__description {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  &__bottom-bg {
+    bottom: 0;
+    height: 313px;
+    left: 0;
+    mix-blend-mode: screen;
+    object-fit: cover;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+  }
+}

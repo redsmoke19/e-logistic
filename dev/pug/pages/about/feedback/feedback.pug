@@ -1,0 +1,29 @@
+section.about__feedback.about-feedback
+	.about-feedback__wrapper
+		.about-feedback__inner
+			.container.gx-110
+				.row.gx-0
+					.col-6.py-90.ps-lg-46.pe-lg-164
+						h2.about-feedback__title Обратная связь
+						form.about-feedback__form(action="" method="POST")
+							.row.g-20
+								.col-lg-12
+									label.form__label.about-feedback__label(for="aboutFeedbackName") Имя *
+									input.form__input.about-feedback__input(type="text" name="aboutFeedbackName" id="aboutFeedbackName" placeholder="ФИО")
+								.col-lg-6
+									label.form__label.about-feedback__label(for="aboutFeedbackMail") Ваш e-mail *
+									input.form__input.about-feedback__input(type="text" name="aboutFeedbackMail" id="aboutFeedbackMail" placeholder="e-mail")
+								.col-lg-6
+									label.form__label.about-feedback__label(for="aboutFeedbackPhone") Телефон *
+									input.form__input.about-feedback__input(type="text" name="aboutFeedbackPhone" id="aboutFeedbackPhone" placeholder="+7(___)___-__-__")
+								.col-lg-12
+									label.form__label.about-feedback__label(for="aboutFeedbackText") Сообщение
+									textarea.form__input.about-feedback__input(type="text" name="aboutFeedbackText" id="aboutFeedbackText" placeholder="Текст")
+								.col-lg-9
+									label.form__label.about-feedback__label Защита от автоматического заполнения
+									.about-feedback__captcha Место для каптчи
+									p.about-feedback__conditions Нажимая на кнопку "Отправить", Вы соглашаетесь с #[a(href="#") правилами обработки персональных данных.]
+								.col-lg-6
+									button.about-feedback__button.button(type="submit") Отправить
+		.about-feedback__maps
+			img.about-feedback__map(src="static/images/content/map.png" width="938" height="880" alt="Карта")

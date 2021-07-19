@@ -1,0 +1,38 @@
+.about-concept {
+  padding: 100px 0;
+  &__promo {
+    background-color: $red-color;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(95, 85, 155, .1);
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    padding: 40px;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 40px 0;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__icon {
+    margin: 0 0 40px 0;
+  }
+  &__icon-note {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  &__table {
+    display: flex;
+    padding: 15px 40px;
+    &--gray {
+      background-color: $light-gray-color;
+    }
+  }
+}

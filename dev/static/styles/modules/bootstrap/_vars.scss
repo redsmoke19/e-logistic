@@ -19,6 +19,7 @@ $spacers: (
   30: 30px,
   32: 32px,
   40: 40px,
+  46: 46px,
   50: 50px,
   54: 54px,
   56: 56px,
@@ -29,10 +30,12 @@ $spacers: (
   70: 70px,
   80: 80px,
   85: 85px,
+  90: 90px,
   100: 100px,
   110: 110px,
   120: 120px,
   140: 140px,
+  164: 164px,
   500: -50px,
 ) !default;
 
@@ -48,7 +51,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 1280px,
-  xl: 1920px,
+  xl: 2000px,
   xxl: 2100px
 ) !default;
 
@@ -56,7 +59,7 @@ $container-max-widths: (
   sm: 540px,
   md: 736px,
   lg: 1640px,
-  xl: 1640px,
+  xl: 1800px,
   xxl: 80%
 ) !default;
 

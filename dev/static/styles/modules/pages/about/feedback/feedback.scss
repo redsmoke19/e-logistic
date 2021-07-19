@@ -1,0 +1,52 @@
+.about-feedback {
+  background-color: $background-light-gray-color;
+  &__wrapper {
+    display: flex;
+  }
+  &__inner {
+    align-self: center;
+    flex: 0 0 100%;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 23px 0;
+  }
+  &__captcha {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    height: 77px;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    width: 302px;
+  }
+  &__conditions {
+    font-size: 13px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+    a {
+      color: inherit;
+      text-decoration: underline;
+      transition: all ease-out .2s;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  &__maps {
+    flex: 0 0 48.855%;
+    padding-top: 45.834%;
+    position: relative;
+    transform: translateX(-100%);
+    width: 100%;
+  }
+  &__map {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
