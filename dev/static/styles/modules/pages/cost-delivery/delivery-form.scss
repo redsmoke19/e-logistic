@@ -1,0 +1,27 @@
+.cost-delivery-form {
+  border: 2px solid $red-color;
+  border-radius: 20px;
+  padding: 40px;
+  &__title {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+  }
+  &__subtitle {
+    color: $red-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0 0 40px 0;
+  }
+  &__example {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 14px 0 0 0;
+    a {
+      color: $red-color;
+      text-decoration: underline;
+    }
+  }
+}

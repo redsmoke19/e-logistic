@@ -1,4 +1,9 @@
 .hero {
+  &--small {
+    background-color: $background-light-gray-color;
+    padding: 60px 0 172px;
+    position: relative;
+  }
   &--big {
     background-color: $background-light-gray-color;
     padding-bottom: 95px;
@@ -33,6 +38,8 @@
     font-size: 50px;
     font-weight: 700;
     line-height: 68px;
+    position: relative;
+    z-index: 2;
   }
   &__text {
     font-size: 30px;
@@ -41,5 +48,15 @@
   &__button {
     display: inline-block;
     width: auto;
+  }
+  &__bottom-bg {
+    bottom: 0;
+    height: 300px;
+    left: 0;
+    object-fit: cover;
+    object-position: bottom;
+    opacity: .7;
+    position: absolute;
+    width: 100%;
   }
 }

@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Расчитать стоимость доставки'
+	-var pageClass = 'cost-delivery-page'
+
+block content
+	main(class=pageClass)
+		include pages/cost-delivery/hero
+		include pages/cost-delivery/cost-delivery

@@ -1,8 +1,8 @@
 footer.footer
 	.container.gx-110
 		.footer__content
-			.row.g-40
-				.col-3
+			.row.g-40.justify-content-between
+				.col-3.d-flex.justify-content-lg-between.flex-lg-column
 					a.footer__logo.mb-lg-24(href="#")
 						img.footer__logo-image(src="static/images/common/logo-desktop-footer.png", alt="Логитип фирмы E-logistic" width="312" height="71")
 					.footer__socials
@@ -16,19 +16,19 @@ footer.footer
 					.footer__info
 						span.footer__name Санкт-Петербург
 						a.footer__link(href="tel:+78126448668") +7 (812) 644-86-68
-							+icon('icon-phone', 'footer__icon-phone', '21', '21')
+							+icon('icon-phone', 'footer__icon-info', '21', '21')
 					.footer__info
 						span.footer__name Москва
 						a.footer__link(href="tel:+74951318668") +7 (495) 131-86-68
-							+icon('icon-phone', 'footer__icon-phone', '21', '21')
+							+icon('icon-phone', 'footer__icon-info', '21', '21')
 				.col-2.d-flex.justify-content-lg-between.flex-lg-column
 					.footer__info
 						span.footer__name Пн — Вс
 						span.footer__link с 9:00 до 21:00
-							+icon('icon-phone', 'footer__icon-phone', '21', '21')
+							+icon('icon-phone', 'footer__icon-info', '21', '21')
 					p.footer__address Россия, Санкт-Петербург, Заозёрная улица, 10Е
-				.col-5.d-flex.justify-content-lg-between.flex-lg-column.align-items-lg-end
-					.footer__information
+				.col-4.d-flex.justify-content-lg-between.flex-lg-column.align-items-lg-end
+					.footer__information.mb-32
 						p.footer__copyright © 2013—2020, E-Logistics. Все права защищены
 						p.footer__links #[a(href="#") Карта сайта] | #[a(href="#") Политика обработки персональных данных]
 					.footer__yandex Блок для яндекса

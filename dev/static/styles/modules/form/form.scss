@@ -5,6 +5,11 @@
     font-weight: 700;
     line-height: 25px;
     margin: 0 0 10px 0;
+    &--small {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 14px 0;
+    }
   }
   &__input {
     align-items: center;
@@ -26,7 +31,24 @@
       box-shadow: 0 0 14px rgba(0, 0, 0, .3);
     }
     &::placeholder {
-      opacity: .7;
+      opacity: .4;
     }
   }
 }
+
+.was-validated {
+  .form__input:not(textarea):valid {
+    border-color: $green;
+  }
+  textarea.form__input:valid {
+    border-color: $green;
+  }
+  .form__input:not(textarea):invalid {
+    border-color: $red-color;
+  }
+  textarea.form__input:invalid {
+    border-color: $red-color;
+  }
+}
+@import './radio';
+@import './checkbox';

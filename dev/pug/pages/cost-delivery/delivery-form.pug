@@ -1,0 +1,41 @@
+form.cost-delivery__form.cost-delivery-form.need-validate(action="#" method="POST" novalidate)
+	h2.cost-delivery-form__title Рассчитать стоимость доставки
+	h3.cost-delivery-form__subtitle Откуда отправляете?
+	.row.gx-20
+		.col-12.d-flex.mb-40
+			.col-6.pe-lg-20
+				input.radio.cost-delivery-form__radio(type="radio", name="costBill" value="costBillYandex" checked id="costDeliveryBillYandex")
+				label.cost-delivery-form__label.form__label(for="costDeliveryBillYandex") Со счета в Яндекс.Деньгах
+			.col-5.ps-lg-20
+				input.radio.cost-delivery-form__radio(type="radio", name="costBill" value="costBillSber" id="costDeliveryBillSber")
+				label.cost-delivery-form__label.form__label(for="costDeliveryBillSber") С банковской карты
+		.col-12.mb-40
+			label.form__label.form__label--small(for="costDeliveryCity") Город получения посылки
+			input.form__input(type="text" id="costDeliveryCity" placeholder="Конечный пункт отправления" required)
+			.invalid-feedback Заполните данное поле
+			p.cost-delivery-form__example Например: #[a Москва], #[a Санкт-Петербург]
+		.col-12.mb-40
+			.row.gx-30.gy-40
+				.col-6
+					label.form__label.form__label--small(for="costDeliveryWeight") Вес отправления, кг
+					input.form__input(type="text" id="costDeliveryWeight" required)
+					.invalid-feedback Заполните данное поле
+				.col-6
+					label.form__label.form__label--small(for="costDeliveryLength") Длина, см
+					input.form__input(type="text" id="costDeliveryLength" required)
+					.invalid-feedback Заполните данное поле
+				.col-6
+					label.form__label.form__label--small(for="costDeliveryWidth") Ширина, см
+					input.form__input(type="text" id="costDeliveryWidth" required)
+					.invalid-feedback Заполните данное поле
+				.col-6
+					label.form__label.form__label--small(for="costDeliveryHeight") Высота, см
+					input.form__input(type="text" id="costDeliveryHeight" required)
+					.invalid-feedback Заполните данное поле
+		.col-12
+			.row.align-items-center
+				.col-8
+					input.checkbox.cost-delivery-form__checkbox(type="checkbox", name="costDeliveryAgree" id="costDeliveryAgree")
+					label.cost-delivery-form__label.form__label(for="costDeliveryAgree") Необходимость забора заказа
+				.col-4
+					button.button(type="submit") Рассчитать

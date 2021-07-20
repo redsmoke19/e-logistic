@@ -1,5 +1,7 @@
 footer { flex: 0 0 auto; }
+
 .footer {
+  background-color: $background-light-gray-color;
   padding: 130px 0 135px;
   &__logo {
     display: flex;
@@ -45,10 +47,37 @@ footer { flex: 0 0 auto; }
       opacity: .7;
     }
   }
-  &__icon-phone {
+  &__icon-info {
     left: -30px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+  &__information {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  &__copyright {
+    margin: 0 0 10px 0;
+  }
+  &__links {
+    a {
+      color: $black;
+      transition: all ease-out .2s;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  &__yandex {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 151px;
   }
 }
