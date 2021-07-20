@@ -46,7 +46,23 @@
       }, false);
     });
   };
+  const getFixedHeader = () => {
+    const header = document.querySelector('.header-top');
+    const headerPlaceholder = document.querySelector('.header__placeholder');
+    if (header) {
+      document.addEventListener('scroll', e => {
+        if (window.pageYOffset > 0) {
+          header.style.position = 'fixed';
+          headerPlaceholder.style.display = 'block';
+        } else {
+          header.style.position = 'relative';
+          headerPlaceholder.style.display = 'none';
+        }
+      });
+    }
+  };
 
   // getMap();
   getGormValidation();
+  getFixedHeader();
 })();

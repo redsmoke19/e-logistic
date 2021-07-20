@@ -5,11 +5,12 @@
   position: absolute;
   left: -9999px;
   + label {
-    display: inline-block;
-    position: relative;
-    padding-left: 28px;
-    line-height: 20px;
     cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 28px;
+    position: relative;
   }
   + label::before {
     background-color: transparent;

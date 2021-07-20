@@ -1,0 +1,16 @@
+.payment-delivery-form {
+  border: 2px solid $red-color;
+  border-radius: 20px;
+  padding: 40px;
+  &__agree {
+    font-size: 15px;
+    line-height: 22px;
+    a {
+      color: $red-color;
+      transition: all ease-out .2s;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Оплата доставки онлайн'
+	-var pageClass = 'payment-delivery-page'
+
+block content
+	main(class=pageClass)
+		include pages/payment-delivery/hero
+		include pages/payment-delivery/payment-delivery

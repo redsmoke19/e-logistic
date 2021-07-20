@@ -1,10 +1,18 @@
 .header {
   flex: 0 0 auto;
+  &__placeholder {
+    display: none;
+    min-height: 60px;
+    width: 100%;
+  }
 }
 
 .header-top {
   background-color: $dark-green-color;
+  min-height: 60px;
   padding: 15px 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header-main {
