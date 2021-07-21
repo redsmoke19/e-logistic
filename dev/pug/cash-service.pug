@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Кассовое обслуживание'
+	-var pageClass = 'cash-service-page'
+
+block content
+	main(class=pageClass)
+		include pages/cash-service/hero
+		include pages/cash-service/cash-service

@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Сертификаты'
+	-var pageClass = 'certificates-page'
+
+block content
+	main(class=pageClass)
+		include pages/certificates/hero
+		include pages/certificates/certificates

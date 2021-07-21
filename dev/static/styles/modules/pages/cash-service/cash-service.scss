@@ -1,0 +1,20 @@
+.cash-service {
+  padding: 100px 0;
+  &__headline {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 0 0 30px 0;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    a {
+      color: $red-color;
+      transition: all ease-out .2s;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

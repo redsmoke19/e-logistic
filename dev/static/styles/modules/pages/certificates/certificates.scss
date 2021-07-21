@@ -1,0 +1,20 @@
+.certificates {
+  padding: 100px 0;
+  &__list {
+    display: flex;
+    margin: 0 -20px;
+  }
+  &__item {
+    padding: 0 20px;
+    width: 33.333%;
+  }
+  &__picture {
+    display: block;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, .05);
+  }
+  &__img {
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+  }
+}
