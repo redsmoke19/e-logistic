@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Полезная информация'
+	-var pageClass = 'helpful-information-page'
+
+block content
+	main(class=pageClass)
+		include pages/helpful-information/hero
+		include pages/helpful-information/helpful-information-3

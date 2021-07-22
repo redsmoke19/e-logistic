@@ -1,0 +1,13 @@
+.helpful-information {
+  padding: 100px 0;
+  &__note {
+    font-size: 16px;
+    line-height: 28px;
+    opacity: .7;
+  }
+}
+
+.helpful-code {
+  background-color: $background-light-gray-color;
+  padding: 100px 0;
+}

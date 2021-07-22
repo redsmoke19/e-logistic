@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Виджет расчета доставки для интернет-магазинов'
+	-var pageClass = 'delivery-calculatione-page'
+
+block content
+	main(class=pageClass)
+		include pages/delivery-calculation/hero
+		include pages/delivery-calculation/delivery-calculation

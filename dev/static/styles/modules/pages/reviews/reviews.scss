@@ -1,0 +1,27 @@
+.reviews {
+  background-color: $background-light-gray-color;
+  padding: 100px 0;
+  &__review {
+    background: url("../images/common/reviews-bg.svg") no-repeat right center;
+    // background-size: 66% auto;
+    background-size: auto 89%;
+  }
+}
+
+.reviews-form {
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(95, 85, 155, 0.1);
+  padding: 40px;
+  &__agree {
+    font-size: 15px;
+    line-height: 22px;
+    a {
+      color: $red-color;
+    }
+  }
+  &__button {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

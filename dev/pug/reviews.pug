@@ -1,0 +1,11 @@
+extends layout/main
+
+block variables
+	-var title = 'Отзывы'
+	-var pageClass = 'reviews-page'
+
+block content
+	main(class=pageClass)
+		include pages/reviews/hero
+		include pages/reviews/reviews
+

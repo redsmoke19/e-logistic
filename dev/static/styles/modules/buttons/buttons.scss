@@ -18,6 +18,14 @@
     background-color: $white;
     color: $red-color;
   }
+  &--transparent {
+    background-color: transparent;
+    color: $red-color;
+    &:hover {
+      background-color: $red-color;
+      color: $white;
+    }
+  }
   &--white {
     background-color: $white;
     color: $red-color;

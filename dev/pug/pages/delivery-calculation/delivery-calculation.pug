@@ -1,0 +1,45 @@
+section.delivery-calculation
+	.container.gx-110
+		.row.gx-40.gy-30
+			.col-6
+				p.delivery-calculation__text.section__text.mb-30 Быстрый расчет стоимости доставки на вашем сайте - теперь это легко вместе с нашим Виджетом.
+				p.delivery-calculation__text.section__text Устанавливаете один из трех вариантов виджетов на свой сайт: в зависимости от выбора, могут настраиваться дополнительные функции калькулятора - от предварительного заполнения габаритов конкретного товара, до полностью автоматического расчета стоимости доставки до города назначения.
+			.col-12
+				.row.gx-40
+					.col-12
+						h4.delivery-calculation__headline.section__headline.mb-30 Базовый вариант
+					.col-6
+						p.delivery-calculation__text.section__text Чтобы произвести расчет, пользователю нужно будет заполнить поля вручную, после чего он получит стоимость доставки.
+					.col-6
+						.delivery-calculation__code-inner.code
+							code.delivery-calculation__code.code__text #{'<iframe src="https://widget.e-logs.ru/?startCity=Москва" frameborder="0" width="100%" height="320"></iframe>'}
+			.col-12
+				.row.gx-40
+					.col-12
+						h4.delivery-calculation__headline.section__headline.mb-30 Продвинутый вариант
+					.col-6
+						p.delivery-calculation__text.section__text Очень удобен для использования, например, на странице конкретного товара или услуги. Вы производите предзаполнение характеристик товара: габаритов, оценочной стоимости (стоимости товара или услуги). Эта операция производится прямо в коде виджета, перед добавлением на сайт. Параметры, которые нужно заполнить: #[strong weight] - вес, #[strong width] - ширина, #[strong height] - высота, #[strong length] - длина
+					.col-6
+						.delivery-calculation__code-inner.code
+							code.delivery-calculation__code.code__text #{'<iframe src="https://widget.e-logs.ru/?startCity=Екатеринбург" frameborder="0" width="100%" height="320"></iframe>'}
+			.col-12
+				.row.gx-40
+					.col-12
+						h4.delivery-calculation__headline.section__headline.mb-30 Автоматический вариант
+					.col-6
+						p.delivery-calculation__text.section__text Автоматический ничем не отличается от Продвинутого варианта, кроме того, что присутствует две дополнительно заполненные переменные, такие как “Город назначения” (endCity) и “Показать” (Shown), то есть непосредственный приказ произвести расчет стоимости доставки немедленно. Параметры, которые нужно заполнить: #[strong weight] - вес, #[strong width] - ширина, #[strong height] - высота, #[strong length] - длина, #[strong sum] - сумма, #[strong endCity] - город назначения, #[strong shown=true] - приказ произвести расчет
+					.col-6
+						.delivery-calculation__code-inner.code
+							code.delivery-calculation__code.code__text #{'<iframe src="https://widget.e-logs.ru/?startCity=Екатеринбург" frameborder="0" width="100%" height="320"></iframe>'}
+			.col-12
+				.row.gx-40
+					.col-12
+						h4.delivery-calculation__headline.section__headline.mb-30 Автоматический вариант
+					.col-6
+						p.delivery-calculation__text.section__text Автоматический ничем не отличается от Продвинутого варианта, кроме того, что присутствует две дополнительно заполненные переменные, такие как “Город назначения” (endCity) и “Показать” (Shown), то есть непосредственный приказ произвести расчет стоимости доставки немедленно. Параметры, которые нужно заполнить: #[strong weight] - вес, #[strong width] - ширина, #[strong height] - высота, #[strong length] - длина, #[strong sum] - сумма, #[strong endCity] - город назначения, #[strong shown=true] - приказ произвести расчет
+					.col-6
+						.delivery-calculation__code-inner.code
+							code.delivery-calculation__code.code__text #{'<iframe src="https://widget.e-logs.ru/?startCity=Москва&weight=10& width=10& height=10&length=10&sum=100& endCity=Екатеринбург&shown=true" frameborder="0" width="100%" height="320"></iframe>'}
+			.col-6
+				p.delivery-calculation__text.section__text.mb-30 Второй и третий варианты требуют чуть более продвинутых навыков программирования, но, отнюдь, не знаний высшей математики.
+				p.delivery-calculation__text.section__text Важно! Прежде чем добавлять город отправления и город доставки в виджет, нужно проверить присутствуют ли они в нашей зоне доставки. Проще всего это сделать на странице нашего калькулятора:<br> #[a(href="https://e-logs.ru/raschyot-stoimosti-dostavki") https://e-logs.ru/raschyot-stoimosti-dostavki] (#[a(href="#") куда доставляем])
