@@ -1,14 +1,14 @@
-.reviews {
+.feedback {
   background-color: $background-light-gray-color;
   padding: 100px 0;
-  &__review {
+  &__inner {
     background: url("../images/common/reviews-bg.svg") no-repeat right center;
     // background-size: 66% auto;
     background-size: auto 89%;
   }
 }
 
-.reviews-form {
+.feedback-form {
   background-color: $white;
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(95, 85, 155, 0.1);
@@ -23,5 +23,85 @@
   &__button {
     font-size: 15px;
     line-height: 20px;
+  }
+}
+
+.reviews {
+  overflow: hidden;
+  padding-bottom: 100px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    padding-top: 24px;
+    position: relative;
+    &:not(:last-child) {
+      margin: 0 0 30px 0;
+    }
+  }
+  &__inner {
+    background-color: $background-light-gray-color;
+    border-radius: 10px;
+    padding: 60px 40px 40px;
+  }
+  &__icon {
+    left: 40px;
+    position: absolute;
+    top: 11px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 24px 0;
+  }
+  &__info {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  &__name {
+    margin: 0 16px 0 0;
+  }
+  &__date {
+    opacity: .5;
+  }
+}
+
+.reviews-slider {
+  overflow: inherit;
+  padding: 100px 0 80px;
+  &__item {
+    max-width: 31.479%;
+  }
+  &__picture {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .05);
+    display: block;
+  }
+  &__button {
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid $red-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    left: -110px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    z-index: 10;
+    &--next {
+      left: unset;
+      right: -110px;
+    }
+  }
+  &__icon-button {
+    &--next {
+      transform: rotate(180deg);
+    }
   }
 }

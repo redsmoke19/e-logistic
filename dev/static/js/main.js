@@ -61,8 +61,34 @@
       });
     }
   };
+  const getSlider = () => {
+    const reviewSlider = new Swiper('.reviews-slider', {
+      direction: 'horizontal',
+      grabCursor: true,
+      preventClicks: true,
+      preventClicksPropagation: true,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      slidesOffsetBefore: 20,
+      slidesOffsetAfter: 20,
+      navigation: {
+        nextEl: '.reviews-slider__button--next',
+        prevEl: '.reviews-slider__button--prev'
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        1280: {
+          slidesPerView: 'auto',
+          spaceBetween: 40,
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0
+        },
+      },
+    });
+  };
 
   // getMap();
   getGormValidation();
   getFixedHeader();
+  getSlider();
 })();
