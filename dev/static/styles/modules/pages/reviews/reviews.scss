@@ -1,28 +1,47 @@
-.feedback {
-  background-color: $background-light-gray-color;
-  padding: 100px 0;
-  &__inner {
-    background: url("../images/common/reviews-bg.svg") no-repeat right center;
-    // background-size: 66% auto;
-    background-size: auto 89%;
-  }
-}
+@import './feedback';
 
-.feedback-form {
-  background-color: $white;
-  border-radius: 20px;
-  box-shadow: 0px 10px 30px rgba(95, 85, 155, 0.1);
-  padding: 40px;
-  &__agree {
-    font-size: 15px;
-    line-height: 22px;
-    a {
-      color: $red-color;
-    }
+.reviews-slider {
+  overflow: inherit;
+  padding: 100px 0 80px;
+  &__item {
+    max-width: 31.479%;
+  }
+  &__picture {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .05);
+    display: block;
   }
   &__button {
-    font-size: 15px;
-    line-height: 20px;
+    align-items: center;
+    background-color: $white;
+    border: 2px solid $red-color;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    left: -110px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-out .2s;
+    width: 50px;
+    z-index: 10;
+    &--next {
+      left: unset;
+      right: -110px;
+    }
+    &:hover {
+      opacity: .7;
+    }
+    &[aria-disabled="true"] {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+  }
+  &__icon-button {
+    &--next {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -67,41 +86,5 @@
   }
   &__date {
     opacity: .5;
-  }
-}
-
-.reviews-slider {
-  overflow: inherit;
-  padding: 100px 0 80px;
-  &__item {
-    max-width: 31.479%;
-  }
-  &__picture {
-    box-shadow: 0 8px 40px rgba(0, 0, 0, .05);
-    display: block;
-  }
-  &__button {
-    align-items: center;
-    background-color: transparent;
-    border: 2px solid $red-color;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    left: -110px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    z-index: 10;
-    &--next {
-      left: unset;
-      right: -110px;
-    }
-  }
-  &__icon-button {
-    &--next {
-      transform: rotate(180deg);
-    }
   }
 }

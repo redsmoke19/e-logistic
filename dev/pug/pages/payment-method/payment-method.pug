@@ -1,0 +1,33 @@
+section.payment-method
+	.container.gx-110
+		ul.payment-method__list
+			li.payment-method__item
+				.payment-method__inner
+					+icon('icon-yandex-money', 'payment-method__icon', '267', '50')
+					h5.payment-method__name Оплата через сервис «Яндекс.Деньги»
+			li.payment-method__item
+				.payment-method__inner
+					+icon('icon-rubles', 'payment-method__icon', '80', '80')
+					h5.payment-method__name Наличными при получении
+			li.payment-method__item
+				.payment-method__inner
+					+icon('icon-credit-card', 'payment-method__icon', '80', '80')
+					h5.payment-method__name Банковской картой при получении
+		.row.gx-40.align-items-lg-center
+			.col-6
+				p.payment-method__text.section__text.mb-30 Компания «Е-Логистик» предлагает профессиональные услуги курьерской службы. Их можно оплатить наиболее удобным для вас способом. На данный момент клиенты могут воспользоваться такими способами, как наличный расчет, оплата посредством банковской карты или с помощью электронной системы «Яндекс.Деньги».
+				p.payment-method__text.section__text.mb-30 Предлагаемые формы оплаты характеризуются высокой надежностью и безопасностью. Указанные вами данные являются конфиденциальными и не разглашаются. Данные банковской карты передаются на сервер в зашифрованном виде. Все операции по ним осуществляются согласно стандартам таких платежных систем, как Visa и MasterCard. Банковской картой вы можете оплатить доставку как на сайте, так и непосредственно курьеру.
+				p.payment-method__text.section__text Перевод с помощью электронной системы «Яндекс.Деньги» на счет компании также является безопасным и простым в использовании способом. Если у вас есть какие-либо вопросы, можете связаться с нашими специалистами по телефону.
+			.col-6
+				.payment-method__systems
+					.payment-method__row.d-lg-flex.justify-content-lg-around.mb-lg-80
+						+icon('icon-master-card', 'payment-method__system-icon', '84', '50')
+						+icon('icon-verified-visa', 'payment-method__system-icon', '70', '40')
+						+icon('icon-visa', 'payment-method__system-icon', '130', '40')
+					.payment-method__row.d-lg-flex.justify-content-lg-between.mb-lg-80
+						+icon('icon-maestro', 'payment-method__system-icon', '83', '50')
+						+icon('icon-google-pay', 'payment-method__system-icon', '101', '40')
+						+icon('icon-mir', 'payment-method__system-icon', '138', '40')
+					.payment-method__row.d-lg-flex.justify-content-lg-around
+						+icon('icon-secure-code', 'payment-method__system-icon', '104', '32')
+						+icon('icon-apple-pay', 'payment-method__system-icon', '98', '40')

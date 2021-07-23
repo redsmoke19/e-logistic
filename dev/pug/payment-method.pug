@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Способы оплаты'
+	-var pageClass = 'payment-method-page'
+
+block content
+	main(class=pageClass)
+		include pages/payment-method/hero
+		include pages/payment-method/payment-method

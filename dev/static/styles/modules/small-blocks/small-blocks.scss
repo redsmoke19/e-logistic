@@ -9,9 +9,9 @@
     line-height: 30px;
     a {
       color: $red-color;
-      transition: all ease-out 0.2s;
+      transition: all ease-out .2s;
       &:hover {
-        opacity: 0.7;
+        opacity: .7;
       }
     }
   }
@@ -98,9 +98,9 @@
     padding-left: 28px;
     position: relative;
     text-decoration: none;
-    transition: all ease-out 0.2s;
+    transition: all ease-out .2s;
     &:hover {
-      opacity: 0.7;
+      opacity: .7;
     }
   }
   &__icon {
