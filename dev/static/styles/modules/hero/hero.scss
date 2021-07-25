@@ -6,7 +6,7 @@
   }
   &--big {
     background-color: $background-light-gray-color;
-    padding-bottom: 95px;
+    padding-bottom: 100px;
   }
   &__wrapper {
     display: flex;
@@ -44,6 +44,10 @@
   &__text {
     font-size: 30px;
     line-height: 46px;
+    &--small {
+      font-size: 20px;
+      line-height: 35px;
+    }
   }
   &__button {
     display: inline-block;
@@ -58,5 +62,14 @@
     opacity: .7;
     position: absolute;
     width: 100%;
+  }
+  &__img-box {
+    align-items: center;
+    display: flex;
+  }
+  &__img-icon {
+    &:not(:last-child) {
+      margin: 0 60px 0 0;
+    }
   }
 }

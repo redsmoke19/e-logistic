@@ -1,0 +1,74 @@
+.delivery-russia-advantages {
+  background-image: url('../images/common/delivery-russia-bg-desktop.png');
+  background-position: 329px center;
+  background-size: 1836px auto;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 65px;
+  }
+  &__icon-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 82px;
+    margin: 0 0 20px 0;
+    width: 82px;
+  }
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  &__list {
+    align-items: flex-start;
+    display: flex;
+    margin: 0 -20px;
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 33.333%;
+    padding: 0 20px;
+  }
+  &__wrap {
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(95, 85, 155, .1);
+    padding: 40px;
+  }
+  &__img-box {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    margin: 0 0 32px 0;
+    width: 100%;
+  }
+  &__options {
+    &:not(:last-child) {
+      margin: 0 0 32px 0;
+    }
+  }
+  &__option {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 24px 0;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  &__link {
+    color: $red-color;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 16px 0 0 0;
+    transition: all ease-out .2s;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+extends layout/main
+
+block variables
+	-var title = 'Доставка по России'
+	-var pageClass = 'delivery-russia-page'
+
+block content
+	main(class=pageClass)
+		include pages/delivery-russia/hero
+		include pages/delivery-russia/delivery-russia
+		include pages/delivery-russia/advantages
+		include pages/about/feedback/feedback
