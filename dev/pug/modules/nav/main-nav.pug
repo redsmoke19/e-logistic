@@ -5,7 +5,10 @@ mixin subNavItem(text,link)
 mixin navItem(text,link,sub)
 	li.nav__item
 		if sub
-			a.nav__link.nav__link--sub(href=link) #{text}
+			.nav__inner
+				a.nav__link.nav__link--sub(href=link) #{text}
+				button.nav__arrow
+					+icon('icon-arrow-bottom', 'nav__arrow-icon', '10', '8')
 			ul.nav__sub-list
 				block
 		else
@@ -23,9 +26,21 @@ nav.nav
 			+subNavItem('Доставка по Спб', '#')
 			+subNavItem('Доставка по Москве', '#')
 			+subNavItem('Доставка Сбп - Москва', '#')
+			+subNavItem('Доставка по России и за рубеж', '#')
+			+subNavItem('Доставка Крупногабаритного груза', '#')
+			+subNavItem('Доставка в маркетплейсы', '#')
+			+subNavItem('Кассовое обслуживание', '#')
+			+subNavItem('Хранение и упаковка (фулфилмент)', '#')
+			+subNavItem('Виджет расчета доставки', '#')
+			+subNavItem('Кросс-докинг', '#')
+			+subNavItem('Доставка для офлайн-ритейла по СПБ', '#')
+			+subNavItem('Пункты выдачи заказов и постоматы', '#')
 		+navItem('Экспресс-доставка', '#', false)
 		+navItem('Полезная информация', '#', true)
 			+subNavItem('Документы', '#')
 			+subNavItem('Личный кабинет и IT интеграция', '#')
 			+subNavItem('Часто задаваемые вопросы', '#')
+			+subNavItem('Наши партнёры', '#')
+			+subNavItem('Новости рынка', '#')
+			+subNavItem('Владельцам интернет-магазинов', '#')
 		+navItem('Контакты', '#', false)

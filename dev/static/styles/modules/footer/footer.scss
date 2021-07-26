@@ -12,6 +12,9 @@ footer { flex: 0 0 auto; }
     display: flex;
     justify-content: space-between;
     margin: 0 -10px;
+    @media screen and (max-width: $tablet-size) {
+      justify-content: center;
+    }
   }
   &__social {
     color: $black;
@@ -19,6 +22,9 @@ footer { flex: 0 0 auto; }
     line-height: 21px;
     padding: 0 10px;
     text-decoration: underline;
+    @media screen and (max-width: $tablet-size) {
+      text-decoration: none;
+    }
   }
   &__icon-social {
     margin: 0 12px 0 0;
@@ -59,6 +65,9 @@ footer { flex: 0 0 auto; }
     flex-direction: column;
     font-size: 13px;
     line-height: 18px;
+    @media screen and (max-width: $tablet-size) {
+      align-items: flex-start;
+    }
   }
   &__copyright {
     margin: 0 0 10px 0;

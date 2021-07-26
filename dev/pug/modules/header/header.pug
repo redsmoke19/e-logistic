@@ -1,24 +1,30 @@
 header.header
 	include ../nav/sidebar
 	.header__top.header-top
-		.container.gx-110.d-flex.justify-content-between.align-items-center
+		.header-top__container.container.gx-md-30.gx-lg-110.d-flex.justify-content-between.align-items-center
+			.header-top__sandwich.sandwich
+				.sandwich__line.sandwich__line--top
+				.sandwich__line.sandwich__line--middle
+				.sandwich__line.sandwich__line--bottom
 			include ../nav/main-nav
 			.header__user-controls.user-controls
 				a.user-controls__link.user-controls__link--search(href="#")
 					span.visually-hidden Кнопка поиска
-					+icon('icon-search', 'user-controls__icon', '30', '30')
+					+icon('icon-search', 'user-controls__icon user-controls__icon--search', '30', '30')
 				a.user-controls__link.user-controls__link--user(href="https://cabinet.e-logs.ru/" target="_blank")
 					span.visually-hidden Личный кабинет
-					+icon('icon-user', 'user-controls__icon', '30', '30')
+					+icon('icon-user', 'user-controls__icon user-controls__icon--user', '30', '30')
 	.header__placeholder
 	.header__main.header-main
 		.container.gx-110
 			.header-main__content.row
 				.header-main__left
-					a.header-main__logo.me-40(href="index.html")
-						img.header-main__logo-image(src="static/images/common/logo-desktop.png", alt="Логитип фирмы E-logistic" width="262" height="60")
-					.header-main__phones
-						.header-main__phone.me-57
+					a.header-main__logo.me-lg-40(href="index.html" data-da=".header-top__container,1279,1")
+						picture.header-main__picture
+							source(media="(min-width: 1280px)" srcset="static/images/common/logo-desktop.png")
+							img.header-main__logo-image(src="static/images/common/logo-mobile.png" alt="Картинка о компании" width="168" height="38")
+					.header-main__phones(data-da=".nav,1279,0")
+						.header-main__phone.mb-20.mb-md-30.mb-lg-0.me-lg-57
 							span.header-main__city Санкт-Петербург
 							a.header-main__tel(href="tel:+78126448668") +7 (812) 644-86-68
 								+icon('icon-phone', 'header-main__icon--phone', '21', '21')

@@ -10,4 +10,19 @@
       margin: 0 40px 0 0;
     }
   }
+  &__icon {
+    &--user {
+      stroke: $white;
+      stroke-width: 2.5px;
+      @media screen and (max-width: $tablet-size) {
+        stroke: $red-color;
+      }
+    }
+    &--search {
+      fill: $white;
+      @media screen and (max-width: $tablet-size) {
+        fill: $red-color;
+      }
+    }
+  }
 }

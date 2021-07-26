@@ -13,6 +13,10 @@
   padding: 15px 0;
   width: 100%;
   z-index: 100;
+  @media screen and (max-width: $tablet-size) {
+    background-color: $white;
+    padding: 0;
+  }
 }
 
 .header-main {
@@ -24,6 +28,19 @@
     &:hover {
       opacity: .7;
     }
+  }
+  &__picture {
+    display: block;
+    height: 60px;
+    width: 262px;
+    @media screen and (max-width: $tablet-size) {
+      height: 39px;
+      width: 168px;
+    }
+  }
+  &__logo-image {
+    height: 100%;
+    width: 100%;
   }
   &__content {
     align-items: center;
@@ -45,11 +62,20 @@
     @media screen and (max-width: 1400px) {
       padding-top: 20px;
     }
+    @media screen and (max-width: $tablet-size) {
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 0 0 40px 0;
+      padding: 0;
+    }
   }
   &__phone {
     display: flex;
     flex-direction: column;
     padding-left: 31px;
+    @media screen and (max-width: $tablet-size) {
+
+    }
   }
   &__city {
     color: $text-grey-color;
@@ -65,6 +91,9 @@
     transition: all ease-out .2s;
     &:hover {
       opacity: .7;
+    }
+    @media screen and (max-width: $tablet-size) {
+      color: $white;
     }
   }
   &__icon--phone {
@@ -88,6 +117,9 @@
     width: auto;
     &:not(:last-child) {
       margin: 0 22px 0 0;
+    }
+    @media screen and (max-width: $tablet-size) {
+      display: none;
     }
   }
 }

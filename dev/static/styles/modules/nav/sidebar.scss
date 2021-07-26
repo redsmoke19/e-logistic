@@ -7,10 +7,36 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
+  @media screen and (max-width: $tablet-size) {
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+    padding: 10px;
+    left: 0;
+    right: unset;
+    top: unset;
+    transform: unset;
+    width: 100%;
+    z-index: 5;
+  }
+  &__list {
+    @media screen and (max-width: $tablet-size) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
   &__item {
     position: relative;
     &:not(:last-child) {
       margin: 0 0 20px 0;
+      @media screen and (max-width: $tablet-size) {
+        margin: 0;
+      }
+    }
+    &:last-child {
+      .sidebar__text {
+        left: unset;
+        right: 0;
+      }
     }
   }
   &__link {
@@ -49,6 +75,11 @@
     visibility: hidden;
     width: auto;
     white-space: nowrap;
+    @media screen and (max-width: $tablet-size) {
+      left: 0;
+      right: unset;
+      top: -20px;
+    }
   }
   &__icon {
     transition: all ease-out .2s;
