@@ -22,6 +22,9 @@
 .header-main {
   background-color: $background-light-gray-color;
   padding: 35px 0 25px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 0 0 30px;
+  }
   &__logo:not([href]) {
     cursor: pointer;
     transition: all ease-out .2s;

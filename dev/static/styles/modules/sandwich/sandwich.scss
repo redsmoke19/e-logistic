@@ -14,23 +14,8 @@
     z-index: 25;
   }
   @media screen and (max-width: $mobile-size) {
-    // order: 0;
-    // position: absolute;
-    // right: 20px;
-    // top: 50%;
-    // transform: translateY(calc(-50% + 10px));
+    margin: 0 0 0 -20px;
   }
-  // &::before {
-  //   background-color: transparent;
-  //   content: '';
-  //   height: 30px;
-  //   left: 50%;
-  //   position: absolute;
-  //   top: 50%;
-  //   transform: translate(-50%, -50%);
-  //   width: 40px;
-  //   z-index: 10;
-  // }
   &._active {
     .sandwich__line {
       &--top {

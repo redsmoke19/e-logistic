@@ -3,6 +3,12 @@ footer { flex: 0 0 auto; }
 .footer {
   background-color: $background-light-gray-color;
   padding: 130px 0 135px;
+  @media screen and (max-width: $tablet-size) {
+    padding: 70px 0 135px;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 30px 0 135px;
+  }
   &__logo {
     display: flex;
     justify-content: center;
@@ -15,6 +21,9 @@ footer { flex: 0 0 auto; }
     @media screen and (max-width: $tablet-size) {
       justify-content: center;
     }
+    @media screen and (max-width: $mobile-size) {
+      justify-content: space-between;
+    }
   }
   &__social {
     color: $black;
@@ -22,7 +31,11 @@ footer { flex: 0 0 auto; }
     line-height: 21px;
     padding: 0 10px;
     text-decoration: underline;
+    @media screen and (max-width: 1400px) {
+      font-size: 14px;
+    }
     @media screen and (max-width: $tablet-size) {
+      font-size: 15px;
       text-decoration: none;
     }
   }
@@ -52,12 +65,23 @@ footer { flex: 0 0 auto; }
     &:hover {
       opacity: .7;
     }
+    @media screen and (max-width: 1400px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $tablet-size) {
+      font-size: 18px;
+    }
   }
   &__icon-info {
     left: -30px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+  &__address {
+    @media screen and (max-width: $mobile-size) {
+      text-align: center;
+    }
   }
   &__information {
     align-items: flex-end;
@@ -68,17 +92,30 @@ footer { flex: 0 0 auto; }
     @media screen and (max-width: $tablet-size) {
       align-items: flex-start;
     }
+    @media screen and (max-width: $mobile-size) {
+      width: 100%;
+    }
   }
   &__copyright {
     margin: 0 0 10px 0;
+    @media screen and (max-width: $mobile-size) {
+      margin: 0 auto 10px;
+    }
   }
   &__links {
+    text-align: right;
     a {
       color: $black;
       transition: all ease-out .2s;
       &:hover {
         opacity: .7;
       }
+    }
+    @media screen and (max-width: $tablet-size) {
+      text-align: unset;
+    }
+    @media screen and (max-width: $mobile-size) {
+      margin: 0 auto;
     }
   }
   &__yandex {
@@ -88,5 +125,29 @@ footer { flex: 0 0 auto; }
     justify-content: center;
     height: 50px;
     width: 151px;
+    @media screen and (max-width: $mobile-size) {
+      margin: 0 auto;
+    }
+  }
+  &__wrap--100 {
+    @media screen and (max-width: 1580px) {
+      width: 100%;
+    }
+  }
+  &__wrap--25 {
+    @media screen and (max-width: 1580px) {
+      width: 25%;
+    }
+    @media screen and (max-width: $tablet-size) {
+      width: 50%;
+    }
+  }
+  &__wrap--25 {
+    @media screen and (max-width: 1580px) {
+      width: 25%;
+    }
+    @media screen and (max-width: $tablet-size) {
+      width: 50%;
+    }
   }
 }

@@ -1,12 +1,13 @@
 section.hero.hero--big
 	.hero__wrapper
 		picture.hero__picture
-			//- source(media="(min-width: 1280px)" srcset="static/images/content/why-need-desktop@1x.png 1x, static/images/content/why-need-desktop@2x.png 2x")
-			img.hero__img(src="static/images/content/about-hero-desktop@1x.png" alt="Картинка о компании" srcset="static/images/content/about-hero-desktop@2x.png 2x" width="920" height="634")
+			source(media="(min-width: 768px)" srcset="static/images/content/about-hero-desktop@1x.png 1x, static/images/content/about-hero-desktop@2x.png 2x")
+			img.hero__img(src="static/images/content/about-hero-mobile@1x.png" alt="Картинка о компании" srcset="static/images/content/about-hero-mobile@2x.png 2x" width="375" height="258")
+			//- img.hero__img(src="static/images/content/about-hero-desktop@1x.png" alt="Картинка о компании" srcset="static/images/content/about-hero-desktop@2x.png 2x" width="920" height="634")
 		.hero__inner
-			.container.gx-110
+			.container.gx-20.gx-md-30.gx-lg-110
 				.row.justify-content-end.g-0
-					.col-6.ps-20
-						h1.hero__title.mb-30 О компании
-						p.hero__text.mb-60 E-Logistics — своевременная доставка товара и ответсвенный подход к выполнению обязательств!
+					.col-12.col-md-6.ps-md-20
+						h1.hero__title.mb-20.mb-md-30 О компании
+						p.hero__text.mb-20.mb-md-60 E-Logistics — своевременная доставка товара и ответсвенный подход к выполнению обязательств!
 						a.hero__button.button Заказать доставку

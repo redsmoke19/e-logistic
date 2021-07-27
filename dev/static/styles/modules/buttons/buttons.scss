@@ -18,6 +18,9 @@
     background-color: $white;
     color: $red-color;
   }
+  @media screen and (max-width: $tablet-size) {
+    padding: 13px 15px;
+  }
   &--transparent {
     background-color: transparent;
     color: $red-color;

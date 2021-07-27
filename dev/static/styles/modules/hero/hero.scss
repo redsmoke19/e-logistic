@@ -7,14 +7,24 @@
   &--big {
     background-color: $background-light-gray-color;
     padding-bottom: 100px;
+    @media screen and (max-width: $mobile-size) {
+      padding-bottom: 40px;
+    }
   }
   &__wrapper {
     display: flex;
+    @media screen and (max-width: $mobile-size) {
+      flex-direction: column;
+    }
   }
   &__inner {
     align-self: center;
     flex: 0 0 100%;
     transform: translateX(-47.917%);
+    @media screen and (max-width: $mobile-size) {
+      margin: 32px 0 0 0;
+      transform: unset;
+    }
   }
   &__picture {
     display: block;
@@ -24,6 +34,10 @@
     position: relative;
     width: 100%;
     z-index: 2;
+    @media screen and (max-width: $mobile-size) {
+      flex: 0 0 100%;
+      padding: 0;
+    }
   }
   &__img {
     height: 100%;
@@ -32,6 +46,13 @@
     position: absolute;
     top: 0;
     width: 100%;
+    @media screen and (max-width: $tablet-size) {
+      object-fit: contain;
+    }
+    @media screen and (max-width: $mobile-size) {
+      object-fit: cover;
+      position: relative;
+    }
   }
   &__title {
     color: $red-color;
@@ -40,10 +61,26 @@
     line-height: 68px;
     position: relative;
     z-index: 2;
+    @media screen and (max-width: $tablet-size) {
+      font-size: 35px;
+      line-height: 42px;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
   &__text {
     font-size: 30px;
     line-height: 46px;
+    @media screen and (max-width: $tablet-size) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 15px;
+      line-height: 22px;
+    }
     &--small {
       font-size: 20px;
       line-height: 35px;

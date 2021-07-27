@@ -2,8 +2,20 @@
   background-color: $dark-green-color;
   padding: 100px 0 200px;
   position: relative;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0 150px;
+  }
   &__top {
-    margin: 0 0 120px 0;
+    margin-bottom: 120px;
+    @media screen and (max-width: $tablet-size) {
+      margin-bottom: 40px;
+    }
+  }
+  &__icon {
+    @media screen and (max-width: $mobile-size) {
+      height: 105px;
+      width: 335px;
+    }
   }
   &__text {
     color: $white;
@@ -16,6 +28,11 @@
     font-weight: 700;
     line-height: 65px;
     margin: 0 0 50px 0;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 0 40px 0;
+    }
   }
   &__count {
     color: $red-color;
@@ -24,6 +41,9 @@
     font-weight: 700;
     line-height: 100px;
     margin: 0 0 32px 0;
+    @media screen and (max-width: $mobile-size) {
+      margin: 0 0 16px 0;
+    }
   }
   &__description {
     color: $white;
@@ -37,6 +57,7 @@
     left: 0;
     mix-blend-mode: screen;
     object-fit: cover;
+    object-position: left;
     opacity: .5;
     position: absolute;
     width: 100%;

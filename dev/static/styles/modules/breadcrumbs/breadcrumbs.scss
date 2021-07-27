@@ -1,10 +1,21 @@
 .breadcrumbs {
   align-items: center;
   display: flex;
+  margin: 30px 0 0 0;
+  @media screen and (max-width: $tablet-size) {
+    margin: 20px 0 0 0;
+  }
+  @media screen and (max-width: $mobile-size) {
+    margin: 10px 0 0 0;
+  }
   &__item {
     display: flex;
     font-size: 15px;
-    line-height: 16px;
+    line-height: 26px;
+    @media screen and (max-width: $tablet-size) {
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
   &__link {
     color: $red-color;
