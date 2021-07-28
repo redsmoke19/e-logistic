@@ -11,6 +11,9 @@
     line-height: 22px;
     padding-left: 28px;
     position: relative;
+    @media screen and (max-width: $mobile-size) {
+      padding-left: 32px;
+    }
   }
   + label::before {
     background-color: transparent;
@@ -23,6 +26,9 @@
     top: 50%;
     transform: translateY(-50%);
     width: 14px;
+    @media screen and (max-width: $mobile-size) {
+      left: 5px;
+    }
   }
   &:focus + label::before {
     box-shadow: $input-btn-focus-box-shadow;
@@ -42,6 +48,9 @@
     transform: translateY(-50%);
     transition: all ease-out .15s;
     width: 6px;
+    @media screen and (max-width: $mobile-size) {
+      left: 9px;
+    }
   }
   &:not(:checked) + label::after {
     opacity: 0;

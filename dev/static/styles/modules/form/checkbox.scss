@@ -23,6 +23,9 @@
     position: absolute;
     top: calc(50% - 7px);
     width: 14px;
+    @media screen and (max-width: $mobile-size) {
+      left: 5px;
+    }
   }
   &:focus + label::before {
     box-shadow: $input-btn-focus-box-shadow;
@@ -44,6 +47,9 @@
     transition: all ease-out .15s;
     transform: rotate(-45deg);
     width: 8px;
+    @media screen and (max-width: $mobile-size) {
+      left: 8px;
+    }
   }
   &:not(:checked) + label::after {
     opacity: 0;

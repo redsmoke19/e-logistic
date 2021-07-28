@@ -76,9 +76,6 @@
     display: flex;
     flex-direction: column;
     padding-left: 31px;
-    @media screen and (max-width: $tablet-size) {
-
-    }
   }
   &__city {
     color: $text-grey-color;

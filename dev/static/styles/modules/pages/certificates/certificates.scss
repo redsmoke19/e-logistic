@@ -1,12 +1,36 @@
 .certificates {
   padding: 100px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0;
+  }
+  &__slider {
+    overflow: visible;
+    @media screen and (max-width: $tablet-size) {
+      overflow: hidden;
+    }
+  }
   &__list {
     display: flex;
-    margin: 0 -20px;
+    flex-wrap: wrap;
+    margin: -40px -20px 0;
+    @media screen and (max-width: $tablet-size) {
+      margin: -20px -10px 0;
+      flex-wrap: nowrap;
+      margin: 0;
+    }
   }
   &__item {
-    padding: 0 20px;
+    padding: 40px 20px 0;
     width: 33.333%;
+    @media screen and (max-width: $tablet-size) {
+      padding: 20px 10px 0;
+      width: 50%;
+      padding: 0;
+      width: auto;
+    }
   }
   &__picture {
     display: block;
@@ -16,5 +40,31 @@
     height: auto;
     object-fit: contain;
     width: 100%;
+  }
+}
+
+.certificates-pagination {
+  display: none;
+  @media screen and (max-width: $tablet-size) {
+    align-items: center;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin: 30px 0 0 0;
+  }
+  &__bullet {
+    background-color: $bullet-color;
+    border-radius: 50%;
+    height: 10px;
+    transition: all ease-out .2s;
+    width: 10px;
+    &--active {
+      background-color: $red-color;
+      height: 20px;
+      width: 20px;
+    }
+    &:not(:last-child) {
+      margin: 0 30px 0 0;
+    }
   }
 }

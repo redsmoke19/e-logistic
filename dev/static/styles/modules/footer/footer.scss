@@ -129,25 +129,4 @@ footer { flex: 0 0 auto; }
       margin: 0 auto;
     }
   }
-  &__wrap--100 {
-    @media screen and (max-width: 1580px) {
-      width: 100%;
-    }
-  }
-  &__wrap--25 {
-    @media screen and (max-width: 1580px) {
-      width: 25%;
-    }
-    @media screen and (max-width: $tablet-size) {
-      width: 50%;
-    }
-  }
-  &__wrap--25 {
-    @media screen and (max-width: 1580px) {
-      width: 25%;
-    }
-    @media screen and (max-width: $tablet-size) {
-      width: 50%;
-    }
-  }
 }

@@ -3,6 +3,13 @@
     background-color: $background-light-gray-color;
     padding: 60px 0 172px;
     position: relative;
+    @media screen and (max-width: $tablet-size) {
+      min-height: 300px;
+      padding: 40px 0 0;
+    }
+    @media screen and (max-width: $mobile-size) {
+      padding: 40px 0 0;
+    }
   }
   &--big {
     background-color: $background-light-gray-color;
@@ -99,6 +106,10 @@
     opacity: .7;
     position: absolute;
     width: 100%;
+    @media screen and (max-width: $tablet-size) {
+      // height: 200px;
+      object-position: left;
+    }
   }
   &__img-box {
     align-items: center;

@@ -36,15 +36,15 @@
     background-color: $white;
     display: block;
     height: 5px;
-    left:calc(50% - 15px);
+    left: calc(50% - 15px);
     position: absolute;
-    transition: all ease-out 0.3s;
+    transition: all ease-out .3s;
     width: 30px;
     &--top {
       top: 19px;
     }
     &--middle {
-      top: 28px
+      top: 28px;
     }
     &--bottom {
       top: 37px;

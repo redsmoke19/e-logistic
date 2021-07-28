@@ -1,0 +1,50 @@
+.about-advantages {
+  padding: 100px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 100px 0;
+    @media screen and (max-width: $tablet-size) {
+      margin: 0 0 50px 0;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  &__icon-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 82px;
+    margin: 0 0 20px 0;
+    width: 82px;
+    @media screen and (max-width: $tablet-size) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  &__icon-note {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  &__sub-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 80px 0;
+    @media screen and (max-width: $tablet-size) {
+      margin: 0 0 50px 0;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 25px;
+      line-height: 30px;
+      margin: 0 0 40px 0;
+    }
+  }
+}

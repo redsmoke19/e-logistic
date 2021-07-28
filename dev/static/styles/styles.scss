@@ -23,7 +23,7 @@ body {
   &::before {
     display: none;
     @media screen and (max-width: $tablet-size) {
-      background-color: rgba(0, 0, 0, 0.45);
+      background-color: rgba(0, 0, 0, .45);
       content: '';
       display: block;
       height: 100vh;
@@ -31,7 +31,7 @@ body {
       opacity: 0;
       position: fixed;
       pointer-events: none;
-      transition: all ease-out 0.3s 0.15s;
+      transition: all ease-out .3s .15s;
       top: 0;
       width: 100%;
       z-index: 15;

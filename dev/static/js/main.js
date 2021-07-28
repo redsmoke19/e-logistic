@@ -414,29 +414,90 @@
     }
   };
   const getSlider = () => {
-    const reviewSlider = new Swiper('.reviews-slider', {
-      direction: 'horizontal',
-      grabCursor: true,
-      preventClicks: true,
-      preventClicksPropagation: true,
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-      slidesOffsetBefore: 20,
-      slidesOffsetAfter: 20,
-      navigation: {
-        nextEl: '.reviews-slider__button--next',
-        prevEl: '.reviews-slider__button--prev',
-      },
-      breakpoints: {
-        // when window width is >= 320px
-        1280: {
-          slidesPerView: 'auto',
-          spaceBetween: 40,
+    const breakpointMobile = window.matchMedia('(min-width: 1280px)');
+    const certificatesSlider = document.querySelector('.certificates__slider');
+    let certificateSlider;
+
+    const breakpointChecker = function () {
+      let resizeTimeout;
+      if (!resizeTimeout) {
+        resizeTimeout = setTimeout(function () {
+          resizeTimeout = null;
+          resizeHandlerDesktop();
+        }, 100);
+      }
+
+      function resizeHandlerDesktop() {
+        if (breakpointMobile.matches === true) {
+          if (certificateSlider !== undefined) {
+            certificateSlider.destroy(true, true);
+          }
+        } else if (breakpointMobile.matches === false) {
+          enableSubMenu();
+        }
+      }
+    };
+
+    const enableSubMenu = function () {
+      if (certificatesSlider) {
+        certificateSlider = new Swiper('.certificates__slider', {
+          direction: 'horizontal',
+          grabCursor: true,
+          preventClicks: true,
+          preventClicksPropagation: true,
+          slidesPerView: 1,
+          spaceBetween: 0,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0,
+          breakpoints: {
+            // when window width is >= 320px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+              slidesOffsetBefore: 0,
+              slidesOffsetAfter: 0
+            }
+          },
+          pagination: {
+            el: '.certificates-pagination',
+            type: 'bullets',
+            bulletClass: 'certificates-pagination__bullet',
+            bulletActiveClass: 'certificates-pagination__bullet--active',
+            clickable: true
+          },
+        });
+      }
+    };
+
+    const rewiesSlider = document.querySelector('.reviews-slider');
+    if (rewiesSlider) {
+      const reviewSlider = new Swiper('.reviews-slider', {
+        direction: 'horizontal',
+        grabCursor: true,
+        preventClicks: true,
+        preventClicksPropagation: true,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
+        navigation: {
+          nextEl: '.reviews-slider__button--next',
+          prevEl: '.reviews-slider__button--prev'
         },
-      },
-    });
+        breakpoints: {
+          // when window width is >= 320px
+          1280: {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            slidesOffsetBefore: 0,
+            slidesOffsetAfter: 0
+          }
+        }
+      });
+    }
+
+    breakpointMobile.addListener(breakpointChecker);
+    breakpointChecker();
   };
   dynamicAdaptiv();
   getPageVh();

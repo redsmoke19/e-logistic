@@ -1,0 +1,11 @@
+extends layout/main
+
+block variables
+	-var title = 'Доставка крупногабаритного груза'
+	-var pageClass = 'delivery-oversized-page'
+
+block content
+	main(class=pageClass)
+		include pages/delivery-oversized/hero
+		include pages/delivery-oversized/delivery-oversized
+		include pages/about/feedback/feedback

@@ -1,0 +1,62 @@
+.oversized-tariffs {
+  background-color: $dark-green-color;
+  color: $white;
+  padding: 100px 0 200px;
+  position: relative;
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__note {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.tariffs-table {
+  padding: 100px 0 60px;
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 50px 0;
+    min-height: 120px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    padding: 10px 0;
+    &--head {
+      padding: 0 0 20px;
+    }
+    &:nth-child(even) {
+      background-color: $background-dark-green-color;
+      color: $text-green-color;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+  &__head {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 44px;
+    text-align: center;
+  }
+  &__price {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+}

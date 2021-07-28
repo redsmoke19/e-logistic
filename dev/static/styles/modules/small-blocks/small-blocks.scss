@@ -32,6 +32,9 @@
   &__item {
     padding-left: 36px;
     position: relative;
+    @media screen and (max-width: $mobile-size) {
+      padding-left: 26px;
+    }
     &:not(:last-child) {
       margin: 0 0 12px 0;
     }
@@ -44,11 +47,19 @@
       position: absolute;
       top: 10px;
       width: 8px;
+      @media screen and (max-width: $mobile-size) {
+        left: 5px;
+        top: 7px;
+      }
     }
   }
   &__feautures {
     font-size: 16px;
     line-height: 28px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -139,5 +150,36 @@
   &__answer {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.list-checks {
+  &__item {
+    padding-left: 48px;
+    position: relative;
+    &:not(:last-child) {
+      margin: 0 0 40px 0;
+      @media screen and (max-width: $mobile-size) {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+  &__icon {
+    left: 0;
+    position: absolute;
+    top: 5px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    @media screen and (max-width: $tablet-size) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }

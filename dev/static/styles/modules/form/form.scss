@@ -35,6 +35,9 @@
     }
     &:focus {
       box-shadow: 0 0 14px rgba(0, 0, 0, .3);
+      @media screen and (max-width: $mobile-size) {
+        box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+      }
     }
     &::placeholder {
       opacity: .4;
