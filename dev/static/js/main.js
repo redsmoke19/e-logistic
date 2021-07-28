@@ -504,7 +504,7 @@
   getResize();
   getSubMenu();
   getSendwich();
-  // getMap();
+  getMap();
   getGormValidation();
   getFixedHeader();
   getSlider();

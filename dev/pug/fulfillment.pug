@@ -1,0 +1,12 @@
+extends layout/main
+
+block variables
+	-var title = 'Фулфилмент — хранение и упаковка'
+	-var pageClass = 'fulfillment-page'
+
+block content
+	main(class=pageClass)
+		include pages/fulfillment/hero
+		include pages/fulfillment/fulfillment-service
+		include pages/fulfillment/fulfillment-explanation
+		include pages/about/feedback/feedback

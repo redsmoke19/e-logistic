@@ -1,0 +1,40 @@
+.fulfillment-service {
+  background-color: $background-dark-green-color;
+  color: $white;
+  padding: 100px 0 200px;
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__inner {
+    background-color: $white;
+    box-shadow: 0 0 20px rgba(95, 85, 155, .15);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  &__icon {
+    margin: 0 0 24px 0;
+  }
+  &__name {
+    color: $red-color;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 24px 0;
+  }
+  &__desc {
+    color: $black;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.fulfillment-explanation {
+  background-color: $background-light-gray-color;
+  padding: 100px 0;
+}
