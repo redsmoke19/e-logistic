@@ -1,9 +1,18 @@
 .feedback {
   background-color: $background-light-gray-color;
   padding: 100px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0;
+  }
   &__inner {
     background: url("../images/common/reviews-bg.svg") no-repeat right center;
     background-size: auto 89%;
+    @media screen and (max-width: $tablet-size) {
+      background: unset;
+    }
   }
 }
 
@@ -12,6 +21,9 @@
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(95, 85, 155, .1);
   padding: 40px;
+  @media screen and (max-width: $mobile-size) {
+    padding: 20px;
+  }
   &__agree {
     font-size: 15px;
     line-height: 22px;

@@ -1,5 +1,11 @@
 .helpful-information {
   padding: 100px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0;
+  }
   &__note {
     font-size: 16px;
     line-height: 28px;
@@ -10,4 +16,10 @@
 .helpful-code {
   background-color: $background-light-gray-color;
   padding: 100px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0;
+  }
 }

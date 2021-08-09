@@ -1,16 +1,17 @@
 section.hero.hero--big
 	.hero__wrapper
 		picture.hero__picture
-			//- source(media="(min-width: 1280px)" srcset="static/images/content/why-need-desktop@1x.png 1x, static/images/content/why-need-desktop@2x.png 2x")
-			img.hero__img(src="static/images/content/delivery-russian-hero-desktop@1x.png" alt="Картинка о доставки по России" srcset="static/images/content/delivery-russian-hero-desktop@2x.png 2x" width="894" height="634")
+			source(media="(min-width: 768px)" srcset="static/images/content/delivery-russian-hero-desktop@1x.png 1x, static/images/content/delivery-russian-hero-desktop@2x.png 2x")
+			img.hero__img(src="static/images/content/delivery-russian-hero-mobile@1x.png" alt="Картинка о доставки по России" srcset="static/images/content/delivery-russian-hero-mobile@2x.png 2x" width="375" height="258")
 		.hero__inner
-			.container.gx-110
+			.container.gx-20.gx-md-30.gx-lg-110
 				.row.justify-content-end.g-0
-					.col-6.ps-20
-						h1.hero__title.mb-30 Доставка по России
-						p.hero__text.hero__text--small.mb-60 Наша служба осуществит отправку Ваших заказов для доставки по всей России и в другие страны за счет Федеральных партнеров:
-						.hero__img-box.mb-60
-							img.hero__img-icon(src="static/images/content/icon-russian-post.svg" width="165" height="80" alt="Картинка почты России")
-							img.hero__img-icon(src="static/images/content/icon-sdek.png" width="227" height="50" alt="Картинка СДЕК")
-							img.hero__img-icon(src="static/images/content/icon-boxberry.svg" width="102" height="80" alt="Картинка Boxberry")
-						a.hero__button.button Заказать доставку
+					.col-12.col-md-6.ps-md-20
+						h1.hero__title.mb-20.mb-md-30 Доставка по России
+						p.hero__text.mb-20.mb-md-60 Наша служба осуществит отправку Ваших заказов для доставки по всей России и в другие страны за счет Федеральных партнеров:
+						.hero__box
+							.hero__img-box.mt-50.mt-lg-0.mb-lg-60
+								img.hero__img-icon.hero__img-icon--post(src="static/images/content/icon-russian-post.svg" width="165" height="80" alt="Картинка почты России")
+								img.hero__img-icon.hero__img-icon--cdek(src="static/images/content/icon-sdek.png" width="227" height="50" alt="Картинка СДЕК")
+								img.hero__img-icon.hero__img-icon--boxberry(src="static/images/content/icon-boxberry.svg" width="102" height="80" alt="Картинка Boxberry")
+							a.hero__button.button Заказать доставку

@@ -1,15 +1,31 @@
 .payment-method {
   padding: 100px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0;
+  }
   &__list {
     align-items: center;
     display: flex;
     margin: 0 -20px 80px;
+    @media screen and (max-width: $tablet-size) {
+      flex-wrap: wrap;
+      margin: -20px 0 60px;
+    }
   }
   &__item {
     display: flex;
     min-height: 262px;
     padding: 0 20px;
     width: 33.333%;
+    @media screen and (max-width: $tablet-size) {
+      min-height: 220px;
+      margin: 20px 0 0 0;
+      padding: 0;
+      width: 100%;
+    }
   }
   &__inner {
     align-items: center;
@@ -20,6 +36,10 @@
     justify-content: flex-end;
     padding: 10px 10px 60px;
     width: 100%;
+    @media screen and (max-width: $tablet-size) {
+      justify-content: space-between;
+      padding: 50px 0;
+    }
   }
   &__name {
     font-size: 16px;
@@ -27,10 +47,52 @@
     line-height: 22px;
     margin: 40px 0 0 0;
     text-align: center;
+    @media screen and (max-width: $tablet-size) {
+      margin: 0;
+    }
   }
   &__systems {
     display: flex;
     flex-direction: column;
     padding-left: 120px;
+    @media screen and (max-width: $tablet-size) {
+      padding: 0;
+    }
+  }
+  &__system-icon {
+    @media screen and (max-width: $mobile-size) {
+      &--master-card {
+        height: 35px;
+        width: 58px;
+      }
+      &--verified {
+        height: 28px;
+        width: 48px;
+      }
+      &--visa {
+        height: 28px;
+        width: 91px;
+      }
+      &--maestro {
+        height: 35px;
+        width: 58px;
+      }
+      &--google {
+        height: 28px;
+        width: 70px;
+      }
+      &--mir {
+        height: 28px;
+        width: 96px;
+      }
+      &--secure {
+        height: 42px;
+        width: 90px;
+      }
+      &--apple {
+        height: 28px;
+        width: 68px;
+      }
+    }
   }
 }

@@ -3,6 +3,10 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 38px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 22px;
+      line-height: 30px;
+    }
   }
   &__text {
     font-size: 18px;
@@ -13,6 +17,10 @@
       &:hover {
         opacity: .7;
       }
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 15px;
+      line-height: 24px;
     }
   }
 }
@@ -25,6 +33,10 @@
     font-family: $main-font;
     font-size: 18px;
     line-height: 30px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 15px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -90,6 +102,10 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -141,15 +157,28 @@
     font-weight: 700;
     line-height: 30px;
     padding-left: 48px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 34px;
+    }
   }
   &__icon {
     left: 0;
     position: absolute;
     top: 2px;
+    @media screen and (max-width: $mobile-size) {
+      height: 22px;
+      width: 22px;
+    }
   }
   &__answer {
     font-size: 18px;
     line-height: 30px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 15px;
+      line-height: 24px;
+    }
   }
 }
 

@@ -107,17 +107,47 @@
     position: absolute;
     width: 100%;
     @media screen and (max-width: $tablet-size) {
-      // height: 200px;
       object-position: left;
+    }
+  }
+  &__box {
+    @media screen and (max-width: $tablet-size) {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
     }
   }
   &__img-box {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: $tablet-size) {
+      flex-direction: column;
+      order: 2;
+      width: 100%;
+    }
   }
   &__img-icon {
+    @media screen and (max-width: $tablet-size) {
+      &--post {
+        height: 60px;
+        width: 124px;
+      }
+      &--cdek {
+        height: 35px;
+        width: 156px;
+      }
+      &--boxberry {
+        height: 60px;
+        width: 76px;
+      }
+    }
     &:not(:last-child) {
-      margin: 0 60px 0 0;
+      // margin: 0 60px 0 0;
+      @media screen and (max-width: $tablet-size) {
+        margin: 0 0 30px 0;
+      }
     }
   }
 }

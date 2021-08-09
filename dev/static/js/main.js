@@ -416,7 +416,9 @@
   const getSlider = () => {
     const breakpointMobile = window.matchMedia('(min-width: 1280px)');
     const certificatesSlider = document.querySelector('.certificates__slider');
+    const deliverysRussiansSlider = document.querySelector('.delivery-russia-advantages__slider');
     let certificateSlider;
+    let deliveryRussiaSlider;
 
     const breakpointChecker = function () {
       let resizeTimeout;
@@ -432,6 +434,9 @@
           if (certificateSlider !== undefined) {
             certificateSlider.destroy(true, true);
           }
+          if (deliveryRussiaSlider !== undefined) {
+            deliveryRussiaSlider.destroy(true, true);
+          }
         } else if (breakpointMobile.matches === false) {
           enableSubMenu();
         }
@@ -446,14 +451,13 @@
           preventClicks: true,
           preventClicksPropagation: true,
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 20,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0,
           breakpoints: {
-            // when window width is >= 320px
             768: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 30,
               slidesOffsetBefore: 0,
               slidesOffsetAfter: 0
             }
@@ -464,9 +468,36 @@
             bulletClass: 'certificates-pagination__bullet',
             bulletActiveClass: 'certificates-pagination__bullet--active',
             clickable: true
-          },
+          }
         });
-      }
+      };
+      if (deliverysRussiansSlider) {
+        deliveryRussiaSlider = new Swiper('.delivery-russia-advantages__slider', {
+          direction: 'horizontal',
+          grabCursor: true,
+          preventClicks: true,
+          preventClicksPropagation: true,
+          slidesPerView: 1,
+          spaceBetween: 20,
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              slidesOffsetBefore: 0,
+              slidesOffsetAfter: 0
+            }
+          },
+          pagination: {
+            el: '.delivery-russia-advantages-pagination',
+            type: 'bullets',
+            bulletClass: 'delivery-russia-advantages-pagination__bullet',
+            bulletActiveClass: 'delivery-russia-advantages-pagination__bullet--active',
+            clickable: true
+          }
+        });
+      };
     };
 
     const rewiesSlider = document.querySelector('.reviews-slider');
@@ -476,16 +507,25 @@
         grabCursor: true,
         preventClicks: true,
         preventClicksPropagation: true,
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         spaceBetween: 20,
-        slidesOffsetBefore: 20,
-        slidesOffsetAfter: 20,
+        slidesOffsetBefore: 0,
+        slidesOffsetAfter: 0,
         navigation: {
           nextEl: '.reviews-slider__button--next',
           prevEl: '.reviews-slider__button--prev'
         },
+        pagination: {
+          el: '.reviews-pagination',
+          type: 'bullets',
+          bulletClass: 'reviews-pagination__bullet',
+          bulletActiveClass: 'reviews-pagination__bullet--active',
+          clickable: true
+        },
         breakpoints: {
-          // when window width is >= 320px
+          768: {
+            slidesPerView: 2
+          },
           1280: {
             slidesPerView: 'auto',
             spaceBetween: 40,
@@ -504,7 +544,7 @@
   getResize();
   getSubMenu();
   getSendwich();
-  getMap();
+  // getMap();
   getGormValidation();
   getFixedHeader();
   getSlider();
