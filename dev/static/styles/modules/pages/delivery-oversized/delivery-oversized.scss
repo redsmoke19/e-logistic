@@ -1,14 +1,30 @@
 .delivery-oversized {
   &__top {
     padding: 100px 0;
+    @media screen and (max-width: $tablet-size) {
+      padding: 50px 0;
+    }
+    @media screen and (max-width: $mobile-size) {
+      padding: 40px 0;
+    }
   }
   &__description {
     background-color: $background-light-gray-color;
     padding: 100px 0;
+    @media screen and (max-width: $tablet-size) {
+      padding: 50px 0;
+    }
+    @media screen and (max-width: $mobile-size) {
+      padding: 40px 0;
+    }
   }
   &__desc {
     font-size: 18px;
     line-height: 30px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 15px;
+      line-height: 24px;
+    }
   }
 }
 

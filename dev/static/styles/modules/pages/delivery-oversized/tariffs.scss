@@ -3,23 +3,55 @@
   color: $white;
   padding: 100px 0 200px;
   position: relative;
+  @media screen and (max-width: $tablet-size) {
+    padding: 60px 0 200px;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0 200px;
+  }
   &__title {
     font-size: 45px;
     font-weight: 700;
     line-height: 60px;
+    @media screen and (max-width: $tablet-size) {
+      font-size: 35px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
   &__text {
     font-size: 18px;
     line-height: 32px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 15px;
+      line-height: 24px;
+    }
   }
   &__note {
     font-size: 20px;
     line-height: 30px;
+    @media screen and (max-width: $tablet-size) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 13px;
+      line-height: 22px;
+    }
   }
 }
 
 .tariffs-table {
   padding: 100px 0 60px;
+  @media screen and (max-width: $tablet-size) {
+    padding: 60px 0 40px;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0 40px;
+  }
   &__title {
     font-size: 20px;
     font-weight: 700;
@@ -29,6 +61,17 @@
     @media screen and (max-width: 1450px) {
       margin: 0 0 20px 0;
       min-height: 150px;
+    }
+    @media screen and (max-width: $tablet-size) {
+      font-size: 18px;
+      line-height: 26px;
+      min-height: 90px;
+      margin: 0 0 20px 0;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 16px;
+      line-height: 24px;
+      min-height: unset;
     }
   }
   &__list {
@@ -59,11 +102,22 @@
     @media screen and (max-width: 1450px) {
       min-height: 66px;
     }
+    @media screen and (max-width: $tablet-size) {
+      min-height: unset;
+    }
+    @media screen and (max-width: $mobile-size) {
+      font-size: 13px;
+      line-height: 18px;
+    }
   }
   &__price {
     display: block;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 }
