@@ -1,0 +1,47 @@
+.pagination {
+  align-items: center;
+  display: flex;
+  @media screen and (max-width: $tablet-size) {
+    justify-content: center;
+  }
+  &__item {
+    align-items: center;
+    background-color: $background-light-gray-color;
+    border-radius: 50%;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    justify-content: center;
+    height: 50px;
+    position: relative;
+    width: 50px;
+    &--active {
+      background-color: $red-color;
+      .pagination__count {
+        color: $white;
+      }
+    }
+    &--dots {
+      background-color: transparent;
+    }
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+    }
+  }
+  &__count {
+    color: $black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease-out .15s;
+    &:hover {
+      opacity: .7;
+    }
+    &:not([href]) {
+      cursor: default;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

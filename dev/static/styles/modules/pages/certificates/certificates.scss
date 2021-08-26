@@ -15,7 +15,6 @@
     flex-wrap: wrap;
     margin: -40px -20px 0;
     @media screen and (max-width: $tablet-size) {
-      margin: -20px -10px 0;
       flex-wrap: nowrap;
       margin: 0;
     }
@@ -24,8 +23,6 @@
     padding: 40px 20px 0;
     width: 33.333%;
     @media screen and (max-width: $tablet-size) {
-      padding: 20px 10px 0;
-      width: 50%;
       padding: 0;
       width: auto;
     }
