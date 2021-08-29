@@ -34,6 +34,9 @@
     box-shadow: 0 0 20px rgba(95, 85, 155, .15);
     border-radius: 10px;
     padding: 30px;
+    @media screen and (max-width: $tablet-size) {
+      width: 100%;
+    }
     @media screen and (max-width: $mobile-size) {
       padding: 20px;
     }

@@ -1,0 +1,41 @@
+.offline-retail-advantages {
+  padding: 100px 0 100px;
+  @media screen and (max-width: $tablet-size) {
+    padding: 60px 0 60px;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0 40px;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 100px 0;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 0 60px 0;
+    }
+  }
+  &__icon-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin: 0 0 32px 0;
+    width: 80px;
+    @media screen and (max-width: $mobile-size) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

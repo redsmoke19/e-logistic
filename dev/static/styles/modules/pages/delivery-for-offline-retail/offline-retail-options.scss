@@ -1,0 +1,78 @@
+.offline-retail-options {
+  background-color: $dark-green-color;
+  color: $white;
+  padding: 100px 0 200px;
+  position: relative;
+  @media screen and (max-width: $tablet-size) {
+    padding: 60px 0 200px;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0 200px;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 40px 0;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 0 20px 0;
+    }
+  }
+  &__text {
+    padding: 0 80px 0 0;
+    position: relative;
+    z-index: 1;
+    a {
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+  &__item {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    &:not(:last-child) {
+      @media screen and (max-width: $tablet-size) {
+        margin: 0 0 30px 0;
+      }
+      @media screen and (max-width: $mobile-size) {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  &__inner {
+    background-color: $white;
+    box-shadow: 0 0 20px rgba(95, 85, 155, .15);
+    border-radius: 10px;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    @media screen and (max-width: $mobile-size) {
+      padding: 24px;
+    }
+  }
+  &__icon {
+    margin: 0 0 32px 0;
+    @media screen and (max-width: $mobile-size) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  &__name {
+    color: $red-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0 0 20px 0;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 16px 0;
+    }
+  }
+}

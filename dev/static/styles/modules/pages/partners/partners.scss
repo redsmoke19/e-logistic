@@ -1,0 +1,29 @@
+.partners {
+  padding: 100px 0 80px;
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0 40px;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 60px 0;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 0 40px 0;
+    }
+  }
+  &__inner {
+    box-shadow: 0 10px 30px rgba(95, 85, 155, .1);
+    border-radius: 10px;
+    padding: 50px;
+    @media screen and (max-width: $mobile-size) {
+      padding: 20px;
+    }
+  }
+  &__img {
+    height: auto;
+    width: 100%;
+  }
+}

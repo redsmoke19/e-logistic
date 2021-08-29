@@ -1,0 +1,43 @@
+.crossdocking-what-is {
+  padding: 100px 0 195px;
+  @media screen and (max-width: $tablet-size) {
+    padding: 100px 0 100px;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0 40px;
+  }
+  &__inner {
+    background-color: $white;
+    padding: 0 40px 40px 0;
+    position: relative;
+    @media screen and (max-width: $tablet-size) {
+      padding: 0;
+    }
+    &::after {
+      content: "";
+      background-image: url("../images/common/crossdocking-question.png");
+      background-position: center;
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      height: 500px;
+      position: absolute;
+      right: -330px;
+      top: -25px;
+      width: 500px;
+      z-index: -1;
+      @media screen and (max-width: $tablet-size) {
+        display: none;
+      }
+    }
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0 0 40px 0;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.crossdocking-delivery {
+  padding: 100px 0 100px;
+  @media screen and (max-width: $tablet-size) {
+    padding: 60px 0 60px;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0 40px;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0 0 60px 0;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 0 40px 0;
+    }
+  }
+  &__inner {
+    background-color: $background-light-gray-color;
+    border-radius: 10px;
+    padding: 40px;
+    @media screen and (max-width: $mobile-size) {
+      padding: 30px 24px;
+    }
+  }
+  &__icon-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 64px;
+    margin: 0 0 20px 0;
+    width: 64px;
+    @media screen and (max-width: $mobile-size) {
+      height: 48px;
+      width: 48px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    @media screen and (max-width: $mobile-size) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

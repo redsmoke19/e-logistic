@@ -1,0 +1,13 @@
+extends layout/main
+
+block variables
+	-var title = 'Кросс-докинг (работа с поставщиками)'
+	-var pageClass = 'cross-docking-page'
+
+block content
+	main(class=pageClass)
+		include pages/cross-docking/hero
+		include pages/cross-docking/what-it-is
+		include pages/cross-docking/about-service
+		include pages/cross-docking/delivery-terms
+		include pages/about/feedback/feedback

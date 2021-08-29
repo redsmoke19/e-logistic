@@ -1,0 +1,33 @@
+section.contacts
+	.container.gx-20.gx-md-30.gx-lg-110
+		ul.contacts__list.row.gx-20.gy-60.g-md-40
+			li.contacts__item.col-6.col-lg-3
+				+icon('icon-contacts-phone', 'contacts__icon', '100', '100')
+				span.contacts__note Телефон
+				a.contacts__contact(href="tel:+78122008668") +7 (812) 200-86-68
+				a.contacts__contact(href="tel:+74951318668") +7 (495) 131-86-68
+			li.contacts__item.col-6.col-lg-3
+				+icon('icon-contacts-mail', 'contacts__icon', '100', '100')
+				span.contacts__note Электронная почта
+				a.contacts__contact(href="mailto:info@e-logs.ru") info@e-logs.ru
+			li.contacts__item.col-6.col-lg-3
+				+icon('icon-contacts-work-time', 'contacts__icon', '100', '100')
+				span.contacts__note Режим работы
+				span.contacts__contact ПН-ВС с 9:00 до 21:00
+			li.contacts__item.col-6.col-lg-3
+				+icon('icon-contacts-location', 'contacts__icon', '100', '100')
+				span.contacts__note Телефон
+				span.contacts__contact Заозерная улица, д.&nbsp;10,&nbsp;литера&nbsp;Е
+		ul.contacts__social-list
+			li.contacts__social-item
+				a.contacts__social-link(href="#")
+					span.visually-hidden Ссылка на телеграм
+					+icon('icon-telegram', 'contacts__social-icon', '36', '36')
+			li.contacts__social-item
+				a.contacts__social-link(href="#")
+					span.visually-hidden Ссылка на whatsapp
+					+icon('icon-whatsapp', 'contacts__social-icon', '36', '36')
+			li.contacts__social-item
+				a.contacts__social-link(href="#")
+					span.visually-hidden Ссылка на instagram
+					+icon('icon-instagram', 'contacts__social-icon', '36', '36')

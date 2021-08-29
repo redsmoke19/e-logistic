@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Наши партнеры'
+	-var pageClass = 'partners-page'
+
+block content
+	main(class=pageClass)
+		include pages/partners/hero
+		include pages/partners/partners

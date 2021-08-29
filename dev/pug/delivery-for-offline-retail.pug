@@ -1,0 +1,11 @@
+extends layout/main
+
+block variables
+	-var title = 'Доставка для офлайн-ритейла по Санкт-Петербургу'
+	-var pageClass = 'delivery-for-offline-retail'
+
+block content
+	main(class=pageClass)
+		include pages/delivery-for-offline-retail/hero
+		include pages/delivery-for-offline-retail/offline-retail-options
+		include pages/delivery-for-offline-retail/advantages

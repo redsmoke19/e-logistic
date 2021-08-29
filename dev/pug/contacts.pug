@@ -1,0 +1,11 @@
+extends layout/main
+
+block variables
+	-var title = 'Контакты'
+	-var pageClass = 'contacts-page'
+
+block content
+	main(class=pageClass)
+		include pages/contacts/hero
+		include pages/contacts/contacts
+		include pages/about/feedback/feedback

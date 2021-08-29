@@ -88,6 +88,16 @@
       background-color: $background-dark-green-color;
       color: $text-green-color;
     }
+    &--crossdocking {
+      &:nth-child(even) {
+        background-color: unset;
+        color: unset;
+      }
+      &:nth-child(odd) {
+        background-color: $background-dark-green-color;
+        color: $text-green-color;
+      }
+    }
   }
   &__inner {
     display: flex;
