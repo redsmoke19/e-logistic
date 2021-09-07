@@ -2,7 +2,7 @@ footer.footer
 	.container.gx-20.gx-md-30.gx-lg-110
 		.footer__content
 			.row.g-0.g-md-40.g-lg-0.justify-content-between
-				.col-12.col-lg-3.d-flex.justify-content-lg-between.flex-column.mb-30.mb-md-0
+				.col-12.col-lg-3.d-flex.justify-content-lg-between.flex-column.mb-30.mb-md-0.footer__col.footer__col--da
 					a.footer__logo.mb-24(href="#")
 						img.footer__logo-image(src="static/images/common/logo-desktop-footer.png", alt="Логитип фирмы E-logistic" width="312" height="71")
 					.footer__socials
@@ -12,7 +12,7 @@ footer.footer
 						a.footer__social(href="mailto:info@e-logs.ru")
 							+icon('icon-instagram', 'footer__icon-social', '19', '19')
 							span info@e-logs.ru
-				.col-12.col-md-6.col-lg-2.d-flex.align-items-center.justify-content-md-between.flex-column.mb-20.mb-md-0.px-40.px-md-0
+				.col-12.col-md-6.col-lg-2.d-flex.align-items-center.justify-content-md-between.flex-column.mb-20.mb-md-0.px-40.px-md-0.footer__col
 					.footer__info.mb-20.mb-lg-0
 						span.footer__name Санкт-Петербург
 						a.footer__link(href="tel:+78126448668") +7 (812) 644-86-68
@@ -21,7 +21,7 @@ footer.footer
 						span.footer__name Москва
 						a.footer__link(href="tel:+74951318668") +7 (495) 131-86-68
 							+icon('icon-phone', 'footer__icon-info', '21', '21')
-				.col-12.col-md-6.col-lg-2.d-flex.align-items-center.align-items-md-start.justify-content-md-between.flex-column.mb-40.mb-md-0.px-40.px-md-0
+				.col-12.col-md-6.col-lg-2.d-flex.align-items-center.align-items-md-start.justify-content-md-between.flex-column.mb-40.mb-md-0.px-40.px-md-0.footer__col
 					.footer__info.mb-20.mb-lg-0
 						span.footer__name Пн — Вс
 						span.footer__link с 9:00 до 21:00
@@ -29,6 +29,19 @@ footer.footer
 					p.footer__address Россия, Санкт-Петербург, Заозёрная улица, 10Е
 				.col-12.col-lg-4.d-flex.justify-content-between.flex-lg-column.align-items-lg-end.flex-wrap
 					.footer__information.mb-32
+						ul.footer__messages-list(data-da=".footer__col--da,1279,1")
+							li.footer__messages-item
+								a.footer__messages-link
+									span.visually-hidden Ссылка на телеграм
+									+icon('icon-telegramm', 'footer__messages-icon', '40', '40')
+							li.footer__messages-item
+								a.footer__messages-link
+									span.visually-hidden Ссылка на whatsApp
+									+icon('icon-watsapp', 'footer__messages-icon', '40', '40')
+							li.footer__messages-item
+								a.footer__messages-link
+									span.visually-hidden Ссылка на whatsApp
+									+icon('icon-instagramm', 'footer__messages-icon', '40', '40')
 						p.footer__copyright © 2013—2020, E-Logistics. Все права защищены
 						p.footer__links #[a.d-none.d-md-inline-block(href="#") Карта сайта] #[span.d-none.d-md-inline-block |] #[a(href="#") Политика обработки персональных данных]
 					.footer__yandex Блок для яндекса

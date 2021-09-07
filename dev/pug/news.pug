@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Новость'
+	-var pageClass = 'news-page'
+
+block content
+	main(class=pageClass)
+		include pages/news/hero
+		include pages/news/news

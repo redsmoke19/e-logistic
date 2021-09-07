@@ -1,0 +1,76 @@
+.pick-up {
+  padding: 100px 0;
+  @media screen and (max-width: $tablet-size) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: $mobile-size) {
+    padding: 40px 0;
+  }
+  &__input-label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0 0 10px 0;
+  }
+  &__checkbox-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 15px 0;
+    @media screen and (max-width: $tablet-size) {
+      margin: 0;
+    }
+  }
+  &__checkbox-inner {
+    @media screen and (max-width: $mobile-size) {
+      width: 100%;
+    }
+    &:not(:last-child) {
+      margin: 0 40px 0 0;
+      @media screen and (max-width: $mobile-size) {
+        margin: 0 0 12px 0;
+      }
+    }
+  }
+  &__filter {
+    align-items: center;
+    background-color: $background-light-gray-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 40px;
+    @media screen and (max-width: $tablet-size) {
+      padding: 20px;
+    }
+    @media screen and (max-width: $mobile-size) {
+      margin: 0 -20px;
+      padding: 20px 20px 30px;
+    }
+  }
+  &__input-inner {
+    @media screen and (max-width: $mobile-size) {
+      margin: 0 0 20px 0;
+    }
+  }
+  &__input {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+  }
+  &__map-wrapper {
+    height: 700px;
+    width: 100%;
+    @media screen and (max-width: $tablet-size) {
+      height: 600px;
+    }
+    @media screen and (max-width: $mobile-size) {
+      height: 500px;
+    }
+  }
+  &__map {
+    height: 100%;
+    width: 100%;
+  }
+}

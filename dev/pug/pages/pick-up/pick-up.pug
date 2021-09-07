@@ -1,0 +1,38 @@
+section.pick-up
+	.container.gx-20.gx-md-30.gx-lg-110
+		.row.justify-content-lg-between.mb-30
+			.col-lg-3.mb-20.mb-lg-0
+				label.pick-up__input-label(for="pickUpTownFilter") Город
+				select.js-select#pickUpTownFilter(data-trigger)
+					option(value="") Все города
+					option(value="Район 1") Москва
+					option(value="Район 2") Санкт-Петербург
+					option(value="Район 3") Самара
+					option(value="Район 4") Казань
+					option(value="Район 5") Екатеринбург
+			.col-lg-9.d-lg-flex.align-items-lg-end.justify-content-lg-end
+				.pick-up__checkbox-wrapper
+					.pick-up__checkbox-inner
+						input.checkbox.checkbox--gray.pick-up__checkbox(type="checkbox", name="PickUpTakeCash" id="PickUpTakeCash")
+						label.pick-up__label.form__label(for="PickUpTakeCash") Прием наличных
+					.pick-up__checkbox-inner
+						input.checkbox.checkbox--gray.pick-up__checkbox(type="checkbox", name="PickUpTakeCard" id="PickUpTakeCard")
+						label.pick-up__label.form__label(for="PickUpTakeCard") Оплата картой
+					.pick-up__checkbox-inner
+						input.checkbox.checkbox--gray.pick-up__checkbox(type="checkbox", name="PickUpClosest" id="PickUpClosest")
+						label.pick-up__label.form__label(for="PickUpClosest") Возможность примерки
+		form.pick-up__filter(action="#" method="get")
+			.pick-up__input-inner.col-12.col-md-4.col-lg-3
+				label.pick-up__input-label(for="pickUpFilterTown") Город
+				input.pick-up__input(type="text" id="pickUpFilterTown" placeholder="Укажите Ваш город")
+			.pick-up__input-inner.col-12.col-md-4.col-lg-3.px-md-10.px-lg-0
+				label.pick-up__input-label(for="pickUpFilterStreet") Улица
+				input.pick-up__input(type="text" id="pickUpFilterStreet" placeholder="Укажите Вашу улицу")
+			.pick-up__input-inner.col-12.col-md-4.col-lg-3
+				label.pick-up__input-label(for="pickUpFilterHouse") Дом
+				input.pick-up__input(type="text" id="pickUpFilterHouse" placeholder="Укажите Ваш дом")
+			.col-12.col-md-4.col-lg-2.align-self-lg-end.mt-md-20.mt-lg-0
+				button.pick-up__button.button(type="submit") Найти
+	.container.gx-0.gx-md-30.gx-lg-110
+		.pick-up__map-wrapper
+			.pick-up__map

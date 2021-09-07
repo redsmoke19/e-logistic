@@ -51,6 +51,24 @@
       left: 8px;
     }
   }
+  &--gray {
+    + label::before {
+      border: 2px solid $border-color;
+      height: 18px;
+      top: calc(50% - 9px);
+      width: 18px;
+    }
+    &:checked + label::after,
+    &:not(:checked) + label::after {
+      height: 6px;
+      left: 3px;
+      top: calc(50% - 7px + 3px);
+      width: 12px;
+      @media screen and (max-width: $mobile-size) {
+        left: 8px;
+      }
+    }
+  }
   &:not(:checked) + label::after {
     opacity: 0;
   }

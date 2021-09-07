@@ -9,6 +9,12 @@ footer { flex: 0 0 auto; }
   @media screen and (max-width: $mobile-size) {
     padding: 30px 0 135px;
   }
+  &__col {
+    height: 150px;
+    @media screen and (max-width: $tablet-size) {
+      height: unset;
+    }
+  }
   &__logo {
     display: flex;
     justify-content: center;
@@ -55,6 +61,7 @@ footer { flex: 0 0 auto; }
   &__link {
     align-items: center;
     color: $black;
+    cursor: pointer;
     display: flex;
     font-size: 18px;
     font-weight: 700;
@@ -127,6 +134,27 @@ footer { flex: 0 0 auto; }
     width: 151px;
     @media screen and (max-width: $mobile-size) {
       margin: 0 auto;
+    }
+  }
+  &__messages-list {
+    align-items: center;
+    display: flex;
+    margin: 0 0 40px 0;
+    @media screen and (max-width: $tablet-size) {
+      justify-content: center;
+    }
+  }
+  &__messages-item {
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+    }
+  }
+  &__messages-link {
+    cursor: pointer;
+    display: block;
+    transition: all ease-out .15s;
+    &:hover {
+      opacity: .7;
     }
   }
 }

@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Новость'
+	-var pageClass = 'pick-up-page'
+
+block content
+	main(class=pageClass)
+		include pages/pick-up/hero
+		include pages/pick-up/pick-up

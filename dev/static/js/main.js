@@ -348,11 +348,68 @@
       });
     }
   };
+  const getSearchForm = () => {
+    const searchForm = document.querySelector('.search-form');
+    const searchFormInput = searchForm.querySelector('.search-form__input');
+    const searchButton = document.querySelector('.user-controls__link--search');
+    if (searchButton != null) {
+      const delay = 500;
+      searchButton.addEventListener('click', function (e) {
+        if (unlock) {
+          bodyLock(delay);
+          searchForm.classList.add('_active');
+          body.classList.add('_overlay-search');
+          // searchFormInput.focus();
+          setTimeout(() => searchFormInput.focus(), 500);
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (!searchForm.classList.contains('_active')) return;
+        if (!e.target.closest('.search-form._active') && !e.target.closest('.user-controls__link--search')) {
+          bodyLock(delay);
+          searchForm.classList.remove('_active');
+          body.classList.remove('_overlay-search');
+        }
+      });
+    }
+  };
   const getMap = () => {
     const complexMap = document.querySelector('#about-map');
+    const pickUpMap = document.querySelector('.pick-up__map');
     if (complexMap) {
       ymaps.ready(function () {
         const map = new ymaps.Map(complexMap, {
+          center: [59.850509, 30.304028],
+          zoom: 14,
+          controls: []
+        });
+        const MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        );
+        const myPlacemark = new ymaps.Placemark(
+          map.getCenter(),
+          {
+            hintContent: 'Офис e-logistic'
+          },
+          {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            // iconImageHref: './static/images/common/icon-marker.svg',
+            // Размеры метки.
+            iconImageSize: [31, 40],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [15, 40]
+          }
+        );
+        map.geoObjects.add(myPlacemark);
+      });
+    }
+    if (pickUpMap) {
+      ymaps.ready(function () {
+        const map = new ymaps.Map(pickUpMap, {
           center: [59.850509, 30.304028],
           zoom: 14,
           controls: []
@@ -539,6 +596,18 @@
     breakpointMobile.addListener(breakpointChecker);
     breakpointChecker();
   };
+  const getSelects = () => {
+    const selectItems = document.querySelectorAll('.js-select');
+    if (selectItems.length > 0) {
+      selectItems.forEach(item => {
+        new Choices(item, {
+          searchEnabled: false,
+          itemSelectText: '',
+          shouldSort: false,
+        });
+      });
+    }
+  };
   dynamicAdaptiv();
   getPageVh();
   getResize();
@@ -548,4 +617,6 @@
   getGormValidation();
   getFixedHeader();
   getSlider();
+  getSearchForm();
+  getSelects();
 })();
