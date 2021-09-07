@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Способы оплаты</title><!--[if IE]>
+    <title>Новость</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -140,91 +140,75 @@
             <ul class="breadcrumbs">
                           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a>
                           </li>
-                          <li class="breadcrumbs__item"><span class="breadcrumbs__text">Способы оплаты</span>
+                          <li class="breadcrumbs__item"><span class="breadcrumbs__text">Пункты выдачи заказов и постоматы</span>
                           </li>
             </ul>
           </div>
         </div>
       </header>
       <div class="content">
-        <main class="payment-method-page">
+        <main class="pick-up-page">
           <section class="hero hero--small">
             <div class="container gx-20 gx-md-30 gx-lg-110">
               <div class="row">
                 <div class="col-12">
-                  <h1 class="hero__title">Способы оплаты</h1>
+                  <h1 class="hero__title">Пункты выдачи заказов и постоматы</h1>
                 </div>
               </div>
             </div><img class="hero__bottom-bg" src="static/images/common/hero-bg-desktop.png" width="1920" height="300" alt="Фоновое изображение Питера">
           </section>
-          <section class="payment-method">
+          <section class="pick-up">
             <div class="container gx-20 gx-md-30 gx-lg-110">
-              <ul class="payment-method__list">
-                <li class="payment-method__item">
-                  <div class="payment-method__inner">
-                    <svg class="svg-sprite-icon icon-icon-you-money payment-method__icon" width="248" height="60">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-you-money"></use>
-                    </svg>
-                    <h5 class="payment-method__name">Оплата через сервис «ЮMoney»</h5>
-                  </div>
-                </li>
-                <li class="payment-method__item">
-                  <div class="payment-method__inner">
-                    <svg class="svg-sprite-icon icon-icon-rubles payment-method__icon" width="80" height="80">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-rubles"></use>
-                    </svg>
-                    <h5 class="payment-method__name">Наличными при получении</h5>
-                  </div>
-                </li>
-                <li class="payment-method__item">
-                  <div class="payment-method__inner">
-                    <svg class="svg-sprite-icon icon-icon-credit-card payment-method__icon" width="80" height="80">
-                      <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-credit-card"></use>
-                    </svg>
-                    <h5 class="payment-method__name">Банковской картой при получении</h5>
-                  </div>
-                </li>
-              </ul>
-              <div class="row gx-0 gx-lg-40 align-items-lg-center">
-                <div class="col-12 col-lg-6 mb-80 mb-lg-0">
-                  <p class="payment-method__text section__text mb-30">Компания «Е-Логистик» предлагает профессиональные услуги курьерской службы. Их можно оплатить наиболее удобным для вас способом. На данный момент клиенты могут воспользоваться такими способами, как наличный расчет, оплата посредством банковской карты или с помощью электронной системы «Яндекс.Деньги».</p>
-                  <p class="payment-method__text section__text mb-30">Предлагаемые формы оплаты характеризуются высокой надежностью и безопасностью. Указанные вами данные являются конфиденциальными и не разглашаются. Данные банковской карты передаются на сервер в зашифрованном виде. Все операции по ним осуществляются согласно стандартам таких платежных систем, как Visa и MasterCard. Банковской картой вы можете оплатить доставку как на сайте, так и непосредственно курьеру.</p>
-                  <p class="payment-method__text section__text">Перевод с помощью электронной системы «Яндекс.Деньги» на счет компании также является безопасным и простым в использовании способом. Если у вас есть какие-либо вопросы, можете связаться с нашими специалистами по телефону.</p>
+              <div class="row justify-content-lg-between mb-30">
+                <div class="col-lg-3 mb-20 mb-lg-0">
+                  <label class="pick-up__input-label" for="pickUpTownFilter">Город</label>
+                  <select class="js-select" id="pickUpTownFilter" data-trigger>
+                    <option value="">Все города</option>
+                    <option value="Район 1">Москва</option>
+                    <option value="Район 2">Санкт-Петербург</option>
+                    <option value="Район 3">Самара</option>
+                    <option value="Район 4">Казань</option>
+                    <option value="Район 5">Екатеринбург</option>
+                  </select>
                 </div>
-                <div class="col-12 col-lg-6">
-                  <div class="payment-method__systems">
-                    <div class="payment-method__row d-flex justify-content-around mb-50 mb-lg-80">
-                      <svg class="svg-sprite-icon icon-icon-master-card payment-method__system-icon payment-method__system-icon--master-card" width="84" height="50">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-master-card"></use>
-                      </svg>
-                      <svg class="svg-sprite-icon icon-icon-verified-visa payment-method__system-icon payment-method__system-icon--verified" width="70" height="40">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-verified-visa"></use>
-                      </svg>
-                      <svg class="svg-sprite-icon icon-icon-visa payment-method__system-icon payment-method__system-icon--visa" width="130" height="40">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-visa"></use>
-                      </svg>
+                <div class="col-lg-9 d-lg-flex align-items-lg-end justify-content-lg-end">
+                  <div class="pick-up__checkbox-wrapper">
+                    <div class="pick-up__checkbox-inner">
+                      <input class="checkbox checkbox--gray pick-up__checkbox" type="checkbox" name="PickUpTakeCash" id="PickUpTakeCash">
+                      <label class="pick-up__label form__label" for="PickUpTakeCash">Прием наличных</label>
                     </div>
-                    <div class="payment-method__row d-flex justify-content-between mb-50 mb-lg-80">
-                      <svg class="svg-sprite-icon icon-icon-maestro payment-method__system-icon payment-method__system-icon--maestro" width="83" height="50">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-maestro"></use>
-                      </svg>
-                      <svg class="svg-sprite-icon icon-icon-google-pay payment-method__system-icon payment-method__system-icon--google" width="101" height="40">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-google-pay"></use>
-                      </svg>
-                      <svg class="svg-sprite-icon icon-icon-mir payment-method__system-icon payment-method__system-icon--mir" width="138" height="40">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-mir"></use>
-                      </svg>
+                    <div class="pick-up__checkbox-inner">
+                      <input class="checkbox checkbox--gray pick-up__checkbox" type="checkbox" name="PickUpTakeCard" id="PickUpTakeCard">
+                      <label class="pick-up__label form__label" for="PickUpTakeCard">Оплата картой</label>
                     </div>
-                    <div class="payment-method__row d-flex justify-content-around">
-                      <svg class="svg-sprite-icon icon-icon-secure-code payment-method__system-icon payment-method__system-icon--secure" width="104" height="32">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-secure-code"></use>
-                      </svg>
-                      <svg class="svg-sprite-icon icon-icon-apple-pay payment-method__system-icon payment-method__system-icon--apple" width="98" height="40">
-                        <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-apple-pay"></use>
-                      </svg>
+                    <div class="pick-up__checkbox-inner">
+                      <input class="checkbox checkbox--gray pick-up__checkbox" type="checkbox" name="PickUpClosest" id="PickUpClosest">
+                      <label class="pick-up__label form__label" for="PickUpClosest">Возможность примерки</label>
                     </div>
                   </div>
                 </div>
+              </div>
+              <form class="pick-up__filter" action="#" method="get">
+                <div class="pick-up__input-inner col-12 col-md-4 col-lg-3">
+                  <label class="pick-up__input-label" for="pickUpFilterTown">Город</label>
+                  <input class="pick-up__input" type="text" id="pickUpFilterTown" placeholder="Укажите Ваш город">
+                </div>
+                <div class="pick-up__input-inner col-12 col-md-4 col-lg-3 px-md-10 px-lg-0">
+                  <label class="pick-up__input-label" for="pickUpFilterStreet">Улица</label>
+                  <input class="pick-up__input" type="text" id="pickUpFilterStreet" placeholder="Укажите Вашу улицу">
+                </div>
+                <div class="pick-up__input-inner col-12 col-md-4 col-lg-3">
+                  <label class="pick-up__input-label" for="pickUpFilterHouse">Дом</label>
+                  <input class="pick-up__input" type="text" id="pickUpFilterHouse" placeholder="Укажите Ваш дом">
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 align-self-lg-end mt-md-20 mt-lg-0">
+                  <button class="pick-up__button button" type="submit">Найти</button>
+                </div>
+              </form>
+            </div>
+            <div class="container gx-0 gx-md-30 gx-lg-110">
+              <div class="pick-up__map-wrapper">
+                <div class="pick-up__map"></div>
               </div>
             </div>
           </section>

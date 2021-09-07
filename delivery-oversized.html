@@ -107,7 +107,7 @@
                             </li>
               </ul>
             </nav>
-            <div class="header__user-controls user-controls"><a class="user-controls__link user-controls__link--search" href="#"><span class="visually-hidden">Кнопка поиска</span>
+            <div class="header__user-controls user-controls"><a class="user-controls__link user-controls__link--search"><span class="visually-hidden">Кнопка поиска</span>
                 <svg class="svg-sprite-icon icon-icon-search user-controls__icon user-controls__icon--search" width="30" height="30">
                   <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-search"></use>
                 </svg></a><a class="user-controls__link user-controls__link--user" href="https://cabinet.e-logs.ru/" target="_blank"><span class="visually-hidden">Личный кабинет</span>
@@ -448,7 +448,7 @@
         <div class="container gx-20 gx-md-30 gx-lg-110">
           <div class="footer__content">
             <div class="row g-0 g-md-40 g-lg-0 justify-content-between">
-              <div class="col-12 col-lg-3 d-flex justify-content-lg-between flex-column mb-30 mb-md-0"><a class="footer__logo mb-24" href="#"><img class="footer__logo-image" src="static/images/common/logo-desktop-footer.png" alt="Логитип фирмы E-logistic" width="312" height="71"></a>
+              <div class="col-12 col-lg-3 d-flex justify-content-lg-between flex-column mb-30 mb-md-0 footer__col footer__col--da"><a class="footer__logo mb-24" href="#"><img class="footer__logo-image" src="static/images/common/logo-desktop-footer.png" alt="Логитип фирмы E-logistic" width="312" height="71"></a>
                 <div class="footer__socials"><a class="footer__social" href="mailto:info@e-logs.ru">
                     <svg class="svg-sprite-icon icon-icon-mail footer__icon" width="19" height="15">
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-mail"></use>
@@ -457,7 +457,7 @@
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-instagram"></use>
                     </svg><span>info@e-logs.ru</span></a></div>
               </div>
-              <div class="col-12 col-md-6 col-lg-2 d-flex align-items-center justify-content-md-between flex-column mb-20 mb-md-0 px-40 px-md-0">
+              <div class="col-12 col-md-6 col-lg-2 d-flex align-items-center justify-content-md-between flex-column mb-20 mb-md-0 px-40 px-md-0 footer__col">
                 <div class="footer__info mb-20 mb-lg-0"><span class="footer__name">Санкт-Петербург</span><a class="footer__link" href="tel:+78126448668">+7 (812) 644-86-68
                     <svg class="svg-sprite-icon icon-icon-phone footer__icon-info" width="21" height="21">
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-phone"></use>
@@ -467,7 +467,7 @@
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-phone"></use>
                     </svg></a></div>
               </div>
-              <div class="col-12 col-md-6 col-lg-2 d-flex align-items-center align-items-md-start justify-content-md-between flex-column mb-40 mb-md-0 px-40 px-md-0">
+              <div class="col-12 col-md-6 col-lg-2 d-flex align-items-center align-items-md-start justify-content-md-between flex-column mb-40 mb-md-0 px-40 px-md-0 footer__col">
                 <div class="footer__info mb-20 mb-lg-0"><span class="footer__name">Пн — Вс</span><span class="footer__link">с 9:00 до 21:00
                     <svg class="svg-sprite-icon icon-icon-clock footer__icon-info" width="21" height="21">
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-clock"></use>
@@ -476,6 +476,20 @@
               </div>
               <div class="col-12 col-lg-4 d-flex justify-content-between flex-lg-column align-items-lg-end flex-wrap">
                 <div class="footer__information mb-32">
+                  <ul class="footer__messages-list" data-da=".footer__col--da,1279,1">
+                    <li class="footer__messages-item"><a class="footer__messages-link"><span class="visually-hidden">Ссылка на телеграм</span>
+                        <svg class="svg-sprite-icon icon-icon-telegramm footer__messages-icon" width="40" height="40">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-telegramm"></use>
+                        </svg></a></li>
+                    <li class="footer__messages-item"><a class="footer__messages-link"><span class="visually-hidden">Ссылка на whatsApp</span>
+                        <svg class="svg-sprite-icon icon-icon-watsapp footer__messages-icon" width="40" height="40">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-watsapp"></use>
+                        </svg></a></li>
+                    <li class="footer__messages-item"><a class="footer__messages-link"><span class="visually-hidden">Ссылка на whatsApp</span>
+                        <svg class="svg-sprite-icon icon-icon-instagramm footer__messages-icon" width="40" height="40">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-instagramm"></use>
+                        </svg></a></li>
+                  </ul>
                   <p class="footer__copyright">© 2013—2020, E-Logistics. Все права защищены</p>
                   <p class="footer__links"><a class="d-none d-md-inline-block" href="#">Карта сайта</a> <span class="d-none d-md-inline-block">|</span> <a href="#">Политика обработки персональных данных</a></p>
                 </div>
@@ -485,6 +499,19 @@
           </div>
         </div>
       </footer>
+      <div class="search-form">
+        <div class="container gx-20 gx-md-30 gx-lg-110">
+          <form class="search-form__form" action="#" method="get">
+            <div class="search-form__overlay"></div>
+            <input class="search-form__input" type="text" title="Введите ключевые слова для поиска" name="search-form" placeholder="Поиск по сайту">
+            <button class="search-form__button" type="submit"><span class="visually-hidden">Отправить форму</span>
+              <svg class="svg-sprite-icon icon-icon-search search-form__icon" width="30" height="30">
+                <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="static/js/libs.js"></script>
     <script src="static/js/main.js"></script>
