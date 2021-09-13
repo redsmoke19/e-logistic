@@ -2,7 +2,8 @@
 	.container.gx-20.gx-md-30.gx-lg-110
 		form.search-form__form(action="#" method="get")
 			.search-form__overlay
-			input.search-form__input(type="text" title="Введите ключевые слова для поиска" name="search-form" placeholder="Поиск по сайту")
-			button.search-form__button(type="submit")
-				span.visually-hidden Отправить форму
-				+icon('icon-search', 'search-form__icon', '30', '30')
+			.search-form__wrapper
+				.search-form__input-box
+					input.search-form__input(type="text" title="Введите ключевые слова для поиска" name="search-form" placeholder="Поиск по сайту")
+					+icon('icon-search', 'search-form__icon', '21', '21')
+				button.search-form__button.button(type="submit") Найти

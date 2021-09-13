@@ -1,0 +1,10 @@
+extends layout/main
+
+block variables
+	-var title = 'Отзывы'
+	-var pageClass = 'search-page'
+
+block content
+	main(class=pageClass)
+		include pages/search/hero
+		include pages/search/search
