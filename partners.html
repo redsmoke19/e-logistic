@@ -302,12 +302,15 @@
         <div class="container gx-20 gx-md-30 gx-lg-110">
           <form class="search-form__form" action="#" method="get">
             <div class="search-form__overlay"></div>
-            <input class="search-form__input" type="text" title="Введите ключевые слова для поиска" name="search-form" placeholder="Поиск по сайту">
-            <button class="search-form__button" type="submit"><span class="visually-hidden">Отправить форму</span>
-              <svg class="svg-sprite-icon icon-icon-search search-form__icon" width="30" height="30">
-                <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-search"></use>
-              </svg>
-            </button>
+            <div class="search-form__wrapper">
+              <div class="search-form__input-box">
+                <input class="search-form__input" type="text" title="Введите ключевые слова для поиска" name="search-form" placeholder="Поиск по сайту">
+                <svg class="svg-sprite-icon icon-icon-search search-form__icon" width="21" height="21">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#icon-search"></use>
+                </svg>
+              </div>
+              <button class="search-form__button button" type="submit">Найти</button>
+            </div>
           </form>
         </div>
       </div>
