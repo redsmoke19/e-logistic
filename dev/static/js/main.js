@@ -608,6 +608,24 @@
       });
     }
   };
+  const getLightgallery = () => {
+    const lightgallery = document.getElementById('lightgallery');
+    lightgallery.addEventListener('lgBeforeOpen', () => {
+      document.body.classList.add('_lock');
+    });
+    lightgallery.addEventListener('lgBeforeClose', () => {
+      document.body.classList.remove('_lock');
+    });
+    lightGallery(lightgallery, {
+      plugins: [lgThumbnail, lgZoom],
+      mobileSettings: {
+        controls: false,
+        showCloseIcon: false,
+        download: false,
+        rotate: false
+      }
+    });
+  };
   dynamicAdaptiv();
   getPageVh();
   getResize();
@@ -619,4 +637,5 @@
   getSlider();
   getSearchForm();
   getSelects();
+  getLightgallery();
 })();

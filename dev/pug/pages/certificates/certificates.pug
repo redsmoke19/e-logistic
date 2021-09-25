@@ -1,17 +1,26 @@
 section.certificates
 	.container.gx-20.gx-md-30.gx-lg-110
 		.certificates__slider.swiper-container
-			ul.certificates__list.swiper-wrapper
-				li.certificates__item.swiper-slide
+			ul.certificates__list.swiper-wrapper#lightgallery
+				li.certificates__item.swiper-slide(data-src="static/images/content/certificate-1-desktop@2x.png")
 					picture.certificates__picture
-						//- source(media="(min-width: 1280px)" srcset="static/images/content/why-need-desktop@1x.png 1x, static/images/content/why-need-desktop@2x.png 2x")
 						img.certificates__img(src="static/images/content/certificate-1-desktop@1x.png" srcset="static/images/content/certificate-1-desktop@2x.png 2x" width="447" height="632" alt="Сертификат компании e-logistic")
-				li.certificates__item.swiper-slide
+				li.certificates__item.swiper-slide(data-src="static/images/content/certificate-2-desktop@2x.png")
 					picture.certificates__picture
-						//- source(media="(min-width: 1280px)" srcset="static/images/content/why-need-desktop@1x.png 1x, static/images/content/why-need-desktop@2x.png 2x")
 						img.certificates__img(src="static/images/content/certificate-2-desktop@1x.png" srcset="static/images/content/certificate-2-desktop@2x.png 2x" width="447" height="632" alt="Сертификат компании e-logistic")
-				li.certificates__item.swiper-slide
+				li.certificates__item.swiper-slide(data-src="static/images/content/certificate-3-desktop@2x.png")
 					picture.certificates__picture
-						//- source(media="(min-width: 1280px)" srcset="static/images/content/why-need-desktop@1x.png 1x, static/images/content/why-need-desktop@2x.png 2x")
 						img.certificates__img(src="static/images/content/certificate-3-desktop@1x.png" srcset="static/images/content/certificate-3-desktop@2x.png 2x" width="447" height="632" alt="Сертификат компании e-logistic")
+				//li.certificates__item.swiper-slide
+				//	a(href="static/images/content/certificate-1-desktop@1x.png")
+				//		picture.certificates__picture
+				//			img.certificates__img(src="static/images/content/certificate-1-desktop@1x.png" srcset="static/images/content/certificate-1-desktop@2x.png 2x" width="447" height="632" alt="Сертификат компании e-logistic")
+				//li.certificates__item.swiper-slide
+				//	a(href="static/images/content/certificate-2-desktop@1x.png")
+				//		picture.certificates__picture
+				//			img.certificates__img(src="static/images/content/certificate-2-desktop@1x.png" srcset="static/images/content/certificate-2-desktop@2x.png 2x" width="447" height="632" alt="Сертификат компании e-logistic")
+				//li.certificates__item.swiper-slide
+				//	a(href="static/images/content/certificate-3-desktop@1x.png")
+				//		picture.certificates__picture
+				//			img.certificates__img(src="static/images/content/certificate-3-desktop@1x.png" srcset="static/images/content/certificate-3-desktop@2x.png 2x" width="447" height="632" alt="Сертификат компании e-logistic")
 		.certificates-pagination
