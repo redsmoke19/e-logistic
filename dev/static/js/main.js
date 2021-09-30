@@ -379,7 +379,7 @@
     if (complexMap) {
       ymaps.ready(function () {
         const map = new ymaps.Map(complexMap, {
-          center: [59.850509, 30.304028],
+          center: [59.906377, 30.324627],
           zoom: 14,
           controls: []
         });
@@ -410,7 +410,7 @@
     if (pickUpMap) {
       ymaps.ready(function () {
         const map = new ymaps.Map(pickUpMap, {
-          center: [59.850509, 30.304028],
+          center: [59.906377, 30.324627],
           zoom: 14,
           controls: []
         });
@@ -610,21 +610,23 @@
   };
   const getLightgallery = () => {
     const lightgallery = document.getElementById('lightgallery');
-    lightgallery.addEventListener('lgBeforeOpen', () => {
-      document.body.classList.add('_lock');
-    });
-    lightgallery.addEventListener('lgBeforeClose', () => {
-      document.body.classList.remove('_lock');
-    });
-    lightGallery(lightgallery, {
-      plugins: [lgThumbnail, lgZoom],
-      mobileSettings: {
-        controls: false,
-        showCloseIcon: false,
-        download: false,
-        rotate: false
-      }
-    });
+    if (lightgallery) {
+      lightgallery.addEventListener('lgBeforeOpen', () => {
+        document.body.classList.add('_lock');
+      });
+      lightgallery.addEventListener('lgBeforeClose', () => {
+        document.body.classList.remove('_lock');
+      });
+      lightGallery(lightgallery, {
+        plugins: [lgThumbnail, lgZoom],
+        mobileSettings: {
+          controls: false,
+          showCloseIcon: false,
+          download: false,
+          rotate: false
+        }
+      });
+    }
   };
   dynamicAdaptiv();
   getPageVh();

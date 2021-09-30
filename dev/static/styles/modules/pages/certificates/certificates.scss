@@ -19,14 +19,14 @@
       margin: 0;
     }
   }
-  &__item {
-    padding: 40px 20px 0;
-    width: 33.333%;
-    @media screen and (max-width: $tablet-size) {
-      padding: 0;
-      width: auto;
-    }
-  }
+  //&__item {
+  //  padding: 40px 20px 0;
+  //  width: 33.333%;
+  //  @media screen and (max-width: $tablet-size) {
+  //    padding: 0;
+  //    width: auto;
+  //  }
+  //}
   &__picture {
     display: block;
     box-shadow: 0 8px 40px rgba(0, 0, 0, .05);
@@ -35,6 +35,15 @@
     height: auto;
     object-fit: contain;
     width: 100%;
+  }
+}
+
+.certificates .certificates__item {
+  padding: 40px 20px 0;
+  width: 33.333%;
+  @media screen and (max-width: $tablet-size) {
+    padding: 0;
+    width: auto;
   }
 }
 
